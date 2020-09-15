@@ -1,0 +1,78 @@
+// .modall {
+//     z-index: 99999;
+//     width: 100vw;
+//     height: 100%;
+//     position: fixed;
+//     display: none;
+//     overflow-y: auto;
+//     max-height: 100vh;
+//     overflow-x: hidden;
+//     top: 0;
+
+//     .modall-body {
+//         background-color: $color_white;
+//         transform: translate(-50%, -50%);
+//         left: 50%;
+//         top: 50%;
+//         margin: 0 auto;
+//         position: absolute;
+//         width: 100%;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         padding: 0;
+//         border-radius: 6px;
+//         -webkit-border-radius: 6px;
+//         -moz-border-radius: 6px;
+//         -ms-border-radius: 6px;
+//         -o-border-radius: 6px;
+//     }
+
+//     .close {
+//         top: -33px;
+//         right: 11px;
+//         width: 25px;
+//         height: 25px;
+//         cursor: pointer;
+//         position: absolute;
+//         z-index: 5;
+
+//         &::before,
+//         &::after {
+//             content: "";
+//             top: 6px;
+//             left: 0;
+//             width: 25px;
+//             height: 2px;
+//             position: absolute;
+//             background: $color_white;
+//         }
+
+//         &::before {
+//             -webkit-transform: rotate(-45deg);
+//             -moz-transform: rotate(-45deg);
+//             -ms-transform: rotate(-45deg);
+//             -o-transform: rotate(-45deg);
+//             transform: rotate(-45deg);
+//         }
+
+//         &::after {
+//             -webkit-transform: rotate(45deg);
+//             -moz-transform: rotate(45deg);
+//             -ms-transform: rotate(45deg);
+//             -o-transform: rotate(45deg);
+//             transform: rotate(45deg);
+//         }
+
+//     }
+
+// }
+
+// .modall.active-modall {
+//     display: block;
+// }
+
+// .showing-modal {
+//     overflow: hidden;
+// }

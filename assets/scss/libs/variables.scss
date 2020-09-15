@@ -1,0 +1,36 @@
+$color_blue: #4563E8;
+$color_darkBlue: #151F49;
+
+$color_red: #E85946;
+
+// цвета для текущего проекта
+$color_black: #101010;
+$color_white: #fff;
+$color_grey: #4F4F4F;
+$color_silver: #FCFCFC;
+$color_green: #5BBC65;
+$color_greenDark: #79C681;
+$color_lightGrey: #828282;
+$color_lightSilver: #F3F3F3;
+
+// Ширины
+
+$screen-xs: 0;
+$screen-480: 480px;
+$screen-768: 768px;
+$screen-1024: 1024px;
+$screen-1280: 1280px;
+$screen-1400: 1400px;
+$screen-1680: 1660px;
+
+$container-sm: 100%;
+//$container-md:                648px;
+$container-md: ($screen-768 - 120px);
+//$container-lg:                864px;
+$container-lg: ($screen-1024 - 160px);
+//$container-xl:                1080px;
+$container-xl: ($screen-1280 - 200px);
+//$container-xxl:               1160px;
+$container-xxl: ($screen-1400 - 240px);
+//$container-xxxl:              1280px;
+$container-xxxl: ($screen-1680 - 320px);
