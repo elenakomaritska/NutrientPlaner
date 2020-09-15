@@ -1464,6 +1464,8 @@
             rgba(196, 196, 196, 0.3) 93.75%);
     padding-bottom: 60px;
 
+    @media (min-width: 1024px) {}
+
     &__heading {
         width: 90%;
         display: flex;
