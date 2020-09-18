@@ -129,6 +129,11 @@
         @media (min-width: 1024px) {
             padding-top: 10px;
         }
+
+        &-image {
+            object-fit: contain;
+            object-position: top;
+        }
     }
 
     &__overlay.active {
