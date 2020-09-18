@@ -1852,6 +1852,7 @@
     background: linear-gradient(0deg,
             rgba(196, 196, 196, 0) 55.21%,
             rgba(196, 196, 196, 0.3) 93.75%);
+<<<<<<< Updated upstream
     padding-bottom: 25px;
     padding-top: 21px;
 
@@ -1861,6 +1862,11 @@
     }
 
     @media (min-width: 1280px) {
+=======
+    padding-bottom: 30px;
+
+    @media (min-width: 1024px) {
+>>>>>>> Stashed changes
         padding-bottom: 105px;
     }
 
@@ -1903,17 +1909,26 @@
     }
 
     &__carousel {
+<<<<<<< Updated upstream
         @media (min-width: 1024px) {
             padding-bottom: 40px;
         }
+=======
+        margin-bottom: 5px;
+>>>>>>> Stashed changes
 
         @media (min-width: 1280px) {
             padding-left: 120px;
+            margin-bottom: 37px;
         }
     }
 
     &__item {
+<<<<<<< Updated upstream
         padding: 30px 20px;
+=======
+        padding: 28px 16px 20px 22px;
+>>>>>>> Stashed changes
         margin: 0 auto;
         display: flex !important;
         justify-content: center;
@@ -1926,10 +1941,20 @@
 
         &-inner {
             background: $color_silver;
-            box-shadow: -15px 4px 20px rgba(0, 0, 0, 0.12);
+            box-shadow: -6px 3px 12px rgba(0, 0, 0, 0.12);
             border-radius: 10px;
             padding: 20px;
             width: 260px;
+<<<<<<< Updated upstream
+=======
+
+            @media (min-width: 1024px) {
+                box-shadow: -15px 4px 20px rgba(0, 0, 0, 0.12);
+                border-radius: 10px;
+                padding: 42px 38px 45px;
+                width: 400px;
+            }
+>>>>>>> Stashed changes
 
             @media (min-width: 1280px) {
                 width: 440px;
@@ -1941,9 +1966,15 @@
             font-weight: 500;
             font-size: 20px;
             line-height: 24px;
+<<<<<<< Updated upstream
             margin-bottom: 20px;
 
             @media (min-width: 1280px) {
+=======
+            margin-bottom: 15px;
+
+            @media (min-width: 1024px) {
+>>>>>>> Stashed changes
                 font-weight: 500;
                 font-size: 35px;
                 line-height: 42px;
@@ -1952,21 +1983,37 @@
         }
     }
 
+<<<<<<< Updated upstream
     &__button {
         display: flex;
         margin: 0 auto;
         min-width: 144px;
         height: 31px;
         font-weight: 500;
+=======
+    .button {
+        margin: 0 auto;
+        display: flex;
+        min-width: 144px;
+        height: 31px;
+>>>>>>> Stashed changes
         font-size: 16px;
         line-height: 19px;
 
         @media (min-width: 1024px) {
+<<<<<<< Updated upstream
             width: 228px;
             height: 50px;
             font-weight: 500;
             font-size: 24px;
             line-height: 29px;
+=======
+            min-width: 160px;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 29px;
+            height: 49px;
+>>>>>>> Stashed changes
         }
     }
 }
@@ -1975,6 +2022,7 @@
     background: linear-gradient(0deg,
             rgba(196, 196, 196, 0) 55.21%,
             rgba(196, 196, 196, 0.3) 93.75%);
+<<<<<<< Updated upstream
     padding-top: 15px;
     padding-bottom: 27px;
 
@@ -1982,6 +2030,12 @@
     @media (min-width: 768px) {
         padding-top: 30px;
         padding-bottom: 47px;
+=======
+    padding-top: 22px;
+
+    @media (min-width: 1024px) {
+        padding-top: 30px;
+>>>>>>> Stashed changes
     }
 
     &__inner {
@@ -1998,6 +2052,7 @@
         font-weight: 600;
         font-size: 26px;
         line-height: 31px;
+<<<<<<< Updated upstream
         margin-bottom: 20px;
         padding: 0 20px;
 
@@ -2110,6 +2165,12 @@
             @media (min-width: 1024px) {
                 margin-right: 6px;
             }
+=======
+        margin-bottom: 40px;
+
+        @media (min-width: 1024px) {
+            text-align: center;
+>>>>>>> Stashed changes
         }
     }
 
@@ -2185,5 +2246,9 @@
                 margin-right: 6px;
             }
         }
+    }
+
+    #telephone {
+        width: 157px;
     }
 }

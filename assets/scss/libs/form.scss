@@ -1,7 +1,12 @@
+<<<<<<< Updated upstream
 .form__input,
 .form__textarea {
     font-style: normal;
     font-weight: 500;
+=======
+.form__textarea,
+.form__input {
+>>>>>>> Stashed changes
     font-size: 13px;
     line-height: 15px;
     padding: 10px 20px;
@@ -14,6 +19,7 @@
     border-radius: 12px;
     color: $color_black;
     max-width: 100%;
+<<<<<<< Updated upstream
     margin-bottom: 8px;
 
     @media (min-width: 768px) {
@@ -26,6 +32,11 @@
     &::placeholder {
         font-style: normal;
         font-weight: 500;
+=======
+    margin-bottom: 10px;
+
+    &::placeholder {
+>>>>>>> Stashed changes
         font-size: 13px;
         line-height: 15px;
         color: $color_lightGrey;
@@ -39,14 +50,10 @@
 
 .form__textarea {
     overflow: auto;
-    height: 130px;
+    height: 126px;
     width: 100%;
     resize: none;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
-    border: none;
+    margin-bottom: 10px;
 }
 
 .select {
