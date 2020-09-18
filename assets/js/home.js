@@ -241,9 +241,9 @@ $(document).ready(function () {
 
   $('.form__input').on('click', function () {
     // event handler
-    $('.form__input').keyup(resizeInput)
+    $(this).keyup(resizeInput)
     // resize on page load
-    $('.form__input').each(resizeInput);
+    $(this).each(resizeInput);
   })
 
   //Scroll to id
