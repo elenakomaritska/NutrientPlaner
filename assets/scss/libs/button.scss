@@ -27,7 +27,7 @@
     font-size: 16px;
     line-height: 19px;
     min-width: 195px;
-    padding: 10px;
+    padding: 0 10px;
     height: 40px;
 
     @media (min-width: 1024px) {
@@ -42,7 +42,9 @@
         cursor: pointer;
     }
 
-    &:hover {}
+    &:hover {
+        background-color: $color_green;
+    }
 }
 
 .button--small {
@@ -65,8 +67,49 @@
     color: $color_white;
     border-color: $color_greenDark;
 
+    &:hover {
+        background-color: $color_buttonHover;
+        border-color: $color_buttonHover;
+    }
+
     @media (min-width: 1024px) {
         min-width: 160px;
+    }
+}
+
+.button--blue {
+    box-shadow: -15px 4px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 25px;
+    background-color: $color_blue;
+    min-width: 150px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: $color_white;
+    border-color: $color_blue;
+
+    &:hover {
+        border-color: $color_darkBlue;
+        background-color: $color_darkBlue;
+    }
+
+    @media (min-width: 1024px) {
+        min-width: 160px;
+    }
+}
+
+.button--disable {
+    color: $color_grey;
+    border-color: $color_silver;
+    background: $color_silver;
+    box-shadow: -6px 3px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 40px;
+
+
+    &:hover {
+        border-color: $color_silver;
+        background: $color_silver;
     }
 }
 
@@ -82,7 +125,7 @@
     }
 }
 
-.button--question {
+.button--grey {
     background: $color_silver;
     box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.05);
     border-radius: 40px;
@@ -95,21 +138,16 @@
     font-size: 18px;
     min-width: 170px;
 
+    &:hover {
+        border-color: $color_silver;
+        background: $color_silver;
+        box-shadow: -10px 4px 10px rgba(0, 0, 0, 0.25);
+    }
+
     @media (min-width: 1400px) {
         min-width: 208px;
         font-size: 24px;
     }
-}
-
-.icon-question {
-    filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.12));
-    width: 50px;
-    height: 50px;
-    background-image: url(../img/question.svg);
-    border-radius: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50%;
 }
 
 .slick-arrow {

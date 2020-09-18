@@ -1,5 +1,19 @@
 $(window).resize(function () {
-
+  if ($(window).width() >= 1024) {
+    $('.rates__cards-content').matchHeight({
+      byRow: false
+    });
+    $('.rates__cards-heading').matchHeight({
+      byRow: false
+    });
+  } else {
+    $('.rates__cards-heading').matchHeight({
+      remove: true
+    });
+    $('.rates__cards-content').matchHeight({
+      remove: true
+    });
+  }
 })
 
 $(document).ready(function () {
@@ -111,8 +125,52 @@ $(document).ready(function () {
     $gl.slick("slickGoTo", index, tabIndex)
   })
 
+
+  if ($(window).width() >= 1024) {
+    $('.rates__cards-content').matchHeight({
+      byRow: false
+    });
+    $('.rates__cards-heading').matchHeight({
+      byRow: false
+    });
+  } else {
+    $('.rates__cards-heading').matchHeight({
+      remove: true
+    });
+    $('.rates__cards-content').matchHeight({
+      remove: true
+    });
+  }
+
   //forms
   jcf.replaceAll();
+  jcf.addModule({
+    selector: 'select.classname',
+  })
+
+
+  //rates
+
+  $(".rates__show-price").on("change", function () {
+    var resultOption = $(this).val()
+    $(this).parents('.rates__cards-item').find('.rates__cards-price').text(resultOption)
+  })
+
+  $(".rates__show-sale").on("change", function () {
+    var resultOption = $(this).val()
+    $(this).parents('.rates__select').find('.rates__select-sale').text(resultOption)
+  })
+
+  $('.rates__action-button').on('click', function () {
+    $('.rates__list').toggleClass('active')
+    $('.button--hide').toggleClass('show')
+    if ($('.rates__list').hasClass('active')) {
+      $('.rates__action-button').text('Свернуть сравнение')
+    } else {
+      $('.rates__action-button').text('Развернуть сравнение')
+    }
+  })
+
 
   //reviews__carousel
   $(".reviews__carousel").slick({
@@ -183,10 +241,27 @@ $(document).ready(function () {
 
   $('.form__input').on('click', function () {
     // event handler
-    $('.form__input').keyup(resizeInput)
+    $(this).keyup(resizeInput)
     // resize on page load
-    $('.form__input').each(resizeInput);
+    $(this).each(resizeInput);
   })
 
+  //Scroll to id
+  function handler(event) {
+    var hash = event.target.hash;
+    var headerHeight = $('header').height();
+    if (hash) {
+      event.preventDefault();
+      if ($(hash).length) {
+        var offset = $(hash).offset().top - 0;
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 'slow');
+        //console.log(offset);
+      }
+    }
+  }
+  //End scroll to id
+  $('.navigation__item a, .main-banner__arrow-down').on("click", handler);
 
 })
