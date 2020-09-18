@@ -12,532 +12,164 @@
 
 <body>
   <!-- Основной контент -->
-
-  <main class="main">
+  <div class="wrapper">
 
     <!-- Header -->
     <include src="assets/templates/header.html"></include>
 
+    <main class="main">
 
-
-
-    <!-- Секция Главный баннер -->
-    <section class="main-banner" id="main-banner">
-      <div class="main-banner__inner">
+      <!-- Секция Главный баннер -->
+      <section class="main-banner" id="main-banner">
         <div class="main-banner__question">
-          <a href="#" class="button button--question">К справочнику</a>
-          <span class="icon-question"></span>
+          <a href="#" class="main-banner__question-button button button--grey">К справочнику</a>
+          <span class="main-banner__question-icon"></span>
         </div>
-        <div class="main-banner__content">
-          <a href="#" class="main-banner__logo">
-            <img src="img/logo.png" alt="logo">
-          </a>
-          <button class="button button--small">войти</button>
-          <h1 class="main-banner__title">
-            Интеллектуальный сервис для экспертов по питанию
-          </h1>
-          <p class="main-banner__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet et fermentum
-            diam et justo phasellus cras proin. Id sed laoreet ut nec elementum cursus praesent sed. Tempus ut cras
-            commodo sed laoreet viverra magna vestibulum. Viverra felis velit quis orci ultrices.</p>
-          <button class="button">Оформить подписку</button>
+        <div class="main-banner__inner">
+          <div class="main-banner__content">
+            <a href="#" class="main-banner__logo">
+              <img src="img/logo.png" alt="logo">
+            </a>
+            <button class="main-banner__button--small button button--small">войти</button>
+            <h1 class="main-banner__title">
+              Интеллектуальный сервис для экспертов по питанию
+            </h1>
+            <p class="main-banner__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet et
+              fermentum
+              diam et justo phasellus cras proin. Id sed laoreet ut nec elementum cursus praesent sed. Tempus ut cras
+              commodo sed laoreet viverra magna vestibulum. Viverra felis velit quis orci ultrices.</p>
+            <button class="main-banner__button button">Оформить подписку</button>
+          </div>
+          <a href="index.html#advantages" class="main-banner__arrow-down"></a>
         </div>
-        <a href="#" class="main-banner__arrow-down"></a>
-      </div>
-    </section>
+      </section>
 
-    <!-- Секция Преимущества -->
-    <section class="advantages" id="advantages">
-      <div class="advantages__inner">
-        <h2 class="advantages__title title">Наши преимущества</h2>
-        <div class="advantages__list">
-          <div class="advantages__item">
-            <img src="img/icon-1.svg" class="advantages__item-image" alt="item-image">
-            <h4 class="advantages__item-title">Экономия</h4>
-            <p class="advantages__item-description">
-              До 80% рабочего времени
-            </p>
-          </div>
-          <div class="advantages__item">
-            <img src="img/icon-2.svg" class="advantages__item-image" alt="item-image">
-            <h4 class="advantages__item-title">Научный подход</h4>
-            <p class="advantages__item-description">
-              Создан группой специалистов и врачей
-            </p>
-          </div>
-          <div class="advantages__item">
-            <img src="img/icon-3.svg" class="advantages__item-image" alt="item-image">
-            <h4 class="advantages__item-title">Более 80 факторов</h4>
-            <p class="advantages__item-description">
-              Учитывается при создании рациона
-            </p>
-          </div>
-          <div class="advantages__item">
-            <img src="img/icon-4.svg" class="advantages__item-image" alt="item-image">
-            <h4 class="advantages__item-title">Подробность</h4>
-            <p class="advantages__item-description">
-              Детальный клиентский отчет с инфографикой
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Секция Возможности -->
-    <section class="opportunities" id="opportunities">
-      <div class="opportunities__inner">
-        <h2 class="opportunities__title ">Функции и возможности</h2>
-        <img src="img/opportunities-img.png" class="opportunities__image" alt="image">
-        <ul class="opportunities__carousel">
-          <li class="opportunities__item">
-            <span class="opportunities__item-subtitle ">1. Формирование подробного PDF-отчета</span>
-            <p class="opportunities__item-description ">В него включен анализ фактического питания, рацион и
-              рекомендации по образу жизни.</p>
-          </li>
-          <li class="opportunities__item">
-            <span class="opportunities__item-subtitle ">2. Формирование подробного PDF-отчета</span>
-            <p class="opportunities__item-description ">В него включен анализ фактического питания</p>
-          </li>
-          <li class="opportunities__item">
-            <span class="opportunities__item-subtitle ">3. Формирование подробного PDF-отчета</span>
-            <p class="opportunities__item-description ">В него включен анализ фактического питания</p>
-          </li>
-          <li class="opportunities__item">
-            <span class="opportunities__item-subtitle ">4. Формирование подробного PDF-отчета</span>
-            <p class="opportunities__item-description ">В него включен анализ фактического питания</p>
-          </li>
-          <li class="opportunities__item">
-            <span class="opportunities__item-subtitle ">5. Формирование подробного PDF-отчета</span>
-            <p class="opportunities__item-description ">В него включен анализ фактического питания</p>
-          </li>
-          <li class="opportunities__item">
-            <span class="opportunities__item-subtitle ">6. Формирование подробного PDF-отчета</span>
-            <p class="opportunities__item-description ">В него включен анализ фактического питания </p>
-          </li>
-        </ul>
-        <div class="opportunities__action">
-          <button class="button">Получить пробную версию</button>
-        </div>
-        <div class="opportunities__dots"></div>
-      </div>
-    </section>
-
-    <!-- Секция Видео -->
-    <section class="video" id="video">
-      <img class='video__background' id="video-cover" src="img/video.png" alt="Video title">
-      <iframe class='video__iframe' id="player" src="https://www.youtube.com/embed/7sbbb7Dt3D8" frameborder="0"
-        allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <button id="play" class="video__button">
-      </button>
-    </section>
-
-    <!-- Секция Шаги -->
-    <section class="step" id="step">
-      <div class="step__inner">
-        <div class="step__heading">
-          <h2 class="step__heading-title">Как работает Nutrient Planner</h2>
-          <div class="step__heading-dots"></div>
-        </div>
-        <div class="step__list">
-          <div class="step__item">
-            <span class="step__item-counter">Шаг 1</span>
-            <h2 class="step__item-title">Анкетирование и сбор диетанамнеза</h2>
-            <p class="step__item-description">
-              Предоставьте клиенту доступ к анкете и дневнику питания или заполните их
-              сами. Анкета имеет подробные вопросы, но в то же время понятна и проста в
-              заполнении. Оцените метаболизм, диетанамнез, наличие заболеваний, пищевые предпочтения и другие
-              особенности клиента (пациента).
-            </p>
-          </div>
-          <div class="step__item">
-            <span class="step__item-counter">Шаг 2</span>
-            <h2 class="step__item-title">Создание рациона</h2>
-            <p class="step__item-description">
-              Сформируйте сбалансированное меню для клиента за считанные минуты.
-              Выберите ручной или автоматический режим с возможностью корректировки.
-              При этом учитывается более 80-ти факторов, включая анкетные данные. Кроме
-              того, вы сможете создать и использовать собственные диетологические
-              шаблоны.
-            </p>
-          </div>
-          <div class="step__item">
-            <span class="step__item-counter">Шаг 3</span>
-            <h2 class="step__item-title">Формирование отчёта для клиента</h2>
-            <p class="step__item-description">
-              Предоставьте клиенту доступ к анкете и дневнику питания или заполните их
-              сами. Анкета имеет подробные вопросы, но в то же время понятна и проста в
-              заполнении. Оцените метаболизм, диетанамнез, наличие заболеваний, пищевые предпочтения и другие
-              особенности клиента (пациента).
-            </p>
-          </div>
-        </div>
-        <div class="step__carousel">
-          <div class="step__carousel-item">
-            <img class="step__carousel-image" src="img/slide.png" alt="">
-          </div>
-          <div class="step__carousel-item">
-            <img class="step__carousel-image" src="https://fakeimg.pl/355x221/" alt="">
-          </div>
-          <div class="step__carousel-item">
-            <img class="step__carousel-image" src="img/slide.png" alt="">
-          </div>
-        </div>
-    </section>
-
-    <!-- Секция Тарифы -->
-    <section class="rates" id="rates">
-      <div class="rates__inner">
-        <h2 class="rates__title">Тарифы</h2>
-        <span class="rates__subtitle">Выберите один из вариантов</span>
-        <div class="rates__heading">
-          <ul class="rates__heading-list">
-            <li class="rates__heading-item">Опции</li>
-            <li class="rates__heading-item">Базовый</li>
-            <li class="rates__heading-item">Профессиональный</li>
+      <!-- Секция Преимущества -->
+      <section class="advantages" id="advantages">
+        <div class="advantages__inner">
+          <h2 class="advantages__title title">Наши преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__img-wrapper">
+                <img src="img/icon-1.svg" class="advantages__img" alt="">
+              </div>
+              <h3 class="advantages__item-title">Экономия</h3>
+              <p class="advantages__item-description">
+                До 80% рабочего времени
+              </p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__img-wrapper">
+                <img src="img/icon-2.svg" class="advantages__img" alt="">
+              </div>
+              <h3 class="advantages__item-title">Научный подход</h3>
+              <p class="advantages__item-description">
+                Создан группой специалистов и врачей
+              </p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__img-wrapper">
+                <img src="img/icon-3.svg" class="advantages__img" alt="">
+              </div>
+              <h3 class="advantages__item-title">Более 80 факторов</h3>
+              <p class="advantages__item-description">
+                Учитывается при создании рациона
+              </p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__img-wrapper">
+                <img src="img/icon-4.svg" class="advantages__img" alt="">
+              </div>
+              <h3 class="advantages__item-title">Подробность</h3>
+              <p class="advantages__item-description">
+                Детальный клиентский отчет с инфографикой
+              </p>
+            </li>
           </ul>
         </div>
-        <div class="rates__list">
-          <div class="rates__item">
-            <div class="rates__content">
-              <h4 class="rates__item-title"> Автоматическое планирование рациона, учитывая:</h4>
-              <ul>
-                <li> - КБЖУ</li>
-                <li>- Предпочитаемый тип питания</li>
-                <li>- Физиологические особенности организма (основные антропометрические данные, активность, аллергии)
-                </li>
-              </ul>
-            </div>
-            <div class="rates__item-value">
-              <img src="img/check.svg" class="rates__item-image" alt="item-image">
-            </div>
-            <div class="rates__item-value">
-              <img src="img/check.svg" class="rates__item-image" alt="item-image">
-            </div>
+      </section>
+
+      <!-- Секция Возможности -->
+      <section class="opportunities" id="opportunities">
+        <div class="opportunities__inner">
+          <h2 class="opportunities__title ">Функции и возможности</h2>
+          <div class="opportunities__wrapper-decor"></div>
+          <ul class="opportunities__carousel">
+            <li class="opportunities__item">
+              <h3 class="opportunities__item-subtitle ">1. Формирование подробного PDF-отчета</h3>
+              <p class="opportunities__item-description ">В него включен анализ фактического питания, рацион и
+                рекомендации по образу жизни.</p>
+            </li>
+            <li class="opportunities__item">
+              <h3 class="opportunities__item-subtitle ">2. Формирование подробного PDF-отчета</h3>
+              <p class="opportunities__item-description ">В него включен анализ фактического питания</p>
+            </li>
+            <li class="opportunities__item">
+              <h3 class="opportunities__item-subtitle ">3. Формирование подробного PDF-отчета</h3>
+              <p class="opportunities__item-description ">В него включен анализ фактического питания</p>
+            </li>
+            <li class="opportunities__item">
+              <h3 class="opportunities__item-subtitle ">4. Формирование подробного PDF-отчета</h3>
+              <p class="opportunities__item-description ">В него включен анализ фактического питания</p>
+            </li>
+            <li class="opportunities__item">
+              <h3 class="opportunities__item-subtitle ">5. Формирование подробного PDF-отчета</h3>
+              <p class="opportunities__item-description ">В него включен анализ фактического питания</p>
+            </li>
+            <li class="opportunities__item">
+              <h3 class="opportunities__item-subtitle ">6. Формирование подробного PDF-отчета</h3>
+              <p class="opportunities__item-description ">В него включен анализ фактического питания </p>
+            </li>
+          </ul>
+          <div class="opportunities__action">
+            <button class="button">Получить пробную версию</button>
           </div>
-          <div class="rates__item">
-            <div class="rates__content">
-              <h4 class="rates__item-title"> Автоматическое планирование рациона, учитывая:</h4>
-              <ul>
-                <li>- Витамины</li>
-                <li>- Минералы</li>
-                <li>- Аминокислоты</li>
-                <li>- ПНЖК</li>
-                <li>- Гликемическая нагрузка</li>
-              </ul>
-            </div>
-            <div class="rates__item-value">
-              <img src="img/check.svg" class="rates__item-image" alt="item-image">
-            </div>
-            <div class="rates__item-value">
-              <img src="img/check.svg" class="rates__item-image" alt="item-image">
-            </div>
-          </div>
-          <div class="rates__item">
-            <div class="rates__content">
-              <h4 class="rates__item-title">Возможность изменять автоматически рассчитанные индивидуальные нормы
-                потребления нутриентов</h4>
-            </div>
-            <div class="rates__item-value">
-              <img src="img/nope.svg" class="rates__item-image shadow--padding" alt="item-image">
-            </div>
-            <div class="rates__item-value">
-              <img src="img/check.svg" class="rates__item-image" alt="item-image">
-            </div>
-          </div>
-          <div class="rates__item">
-            <div class="rates__content">
-              <h4 class="rates__item-title">Формирование и сохранение рассчитанного меню для клиента (пациента)</h4>
-            </div>
-            <div class="rates__item-value">
-              <img src="img/check.svg" class="rates__item-image" alt="item-image">
-            </div>
-            <div class="rates__item-value">
-              <img src="img/check.svg" class="rates__item-image" alt="item-image">
-            </div>
-          </div>
-          <div class="rates__item">
-            <div class="rates__content">
-              <h4 class="rates__item-title">Автоматический расчёт максимально персонализированного меню,
-                сбалансированного по нутриентам с учётом физиологических особенностей клиента</h4>
-            </div>
-            <div class="rates__item-value">
-              <span>От 1 дня</span>
-              <span>до 1 месяца</span>
-            </div>
-            <div class="rates__item-value">
-              <span>От 1 дня</span>
-              <span>до 3 месяцев</span>
-            </div>
-          </div>
-          <div class="rates__item">
-            <div class="rates__content">
-              <h4 class="rates__item-title">Количество клиентов (пациентов) в картотеке</h4>
-            </div>
-            <div class="rates__item-value">
-              <span>Неограниченно</span>
-            </div>
-            <div class="rates__item-value">
-              <span>Неограниченно</span>
-            </div>
-          </div>
-          <div class="rates__item">
-            <div class="rates__content">
-              <h4 class="rates__item-title">Личный кабинет специалиста. Пилотная версия</h4>
-            </div>
-            <div class="rates__item-value">
-              <img src="img/check.svg" class="rates__item-image" alt="item-image">
-            </div>
-            <div class="rates__item-value">
-              <img src="img/check.svg" class="rates__item-image" alt="item-image">
-            </div>
-          </div>
-          <div class="rates__item">
-            <div class="rates__content">
-              <h4 class="rates__item-title">Автоматическое создание клиентского отчёта с возможностью редактирования,
-                который включает:</h4>
-              <ul>
-                <li>- Данные по клиенту (пациенту)</li>
-                <li>- Наглядный графический анализ фактического рациона питания </li>
-                <li>- Меню</li>
-                <li>- Рекомендации по питанию и образу жизни</li>
-                <li>- Время приёмов пищи</li>
-                <li>- Пояснения по работе некоторых систем организма</li>
-                <li>- Рекомендации по приему БАДов </li>
-                <li>- Другие разделы</li>
-              </ul>
-            </div>
-            <div class="rates__item-value">
-              <img src="img/check.svg" class="rates__item-image" alt="item-image">
-            </div>
-            <div class="rates__item-value">
-              <img src="img/check.svg" class="rates__item-image" alt="item-image">
-            </div>
-          </div>
-          <div class="rates__item">
-            <div class="rates__content">
-              <h4 class="rates__item-title">Добавление собственных рецептов с их последующим автоматическим расчетом по
-                всем нутриентам</h4>
-            </div>
-            <div class="rates__item-value">
-              <img src="img/nope.svg" class="rates__item-image shadow--padding" alt="item-image">
-            </div>
-            <div class="rates__item-value">
-              <img src="img/check.svg" class="rates__item-image" alt="item-image">
-            </div>
-          </div>
-          <div class="rates__item">
-            <div class="rates__content">
-              <h4 class="rates__item-title">Ручной режим создания меню</h4>
-            </div>
-            <div class="rates__item-value">
-              <img src="img/nope.svg" class="rates__item-image shadow--padding" alt="item-image">
-            </div>
-            <div class="rates__item-value">
-              <img src="img/check.svg" class="rates__item-image" alt="item-image">
-            </div>
-          </div>
-          <div class="rates__item">
-            <div class="rates__content">
-              <h4 class="rates__item-title">Доступ к разделу «Анализы»*</h4>
-            </div>
-            <div class="rates__item-value">
-              <img src="img/nope.svg" class="rates__item-image shadow--padding" alt="item-image">
-            </div>
-            <div class="rates__item-value">
-              <img src="img/check.svg" class="rates__item-image" alt="item-image">
-            </div>
-          </div>
-          <div class="rates__item">
-            <div class="rates__content">
-              <h4 class="rates__item-title">Составление продуктового списка покупок для клиента к конкретному
-                назначенному рациону*</h4>
-            </div>
-            <div class="rates__item-value">
-              <img src="img/nope.svg" class="rates__item-image shadow--padding" alt="item-image">
-            </div>
-            <div class="rates__item-value">
-              <img src="img/check.svg" class="rates__item-image" alt="item-image">
-            </div>
-            <div class="rates__option">
-              <span>
-                * Опция находится в разработке и станет доступна во второй версии сервиса.
-              </span>
-            </div>
-          </div>
+          <div class="opportunities__dots"></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Секция Цена -->
-    <section class="price" id="price">
-      <div class="price__inner">
-        <form action="" class="price__form form">
-          <div class="form__group">
-            <div class="form__column select">
-              <label>Количество созданных
-                рационов в месяц</label>
-              <select
-                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-                <option>До 10 рационов в месяц</option>
-                <option>10 рационов в месяц</option>
-                <option>10 рационов в месяц</option>
-                <option>10 рационов в месяц</option>
-                <option>10 рационов в месяц</option>
-              </select>
+      <!-- Секция Видео -->
+      <section class="video" id="video">
+        <img class='video__background' id="video-cover" src="img/video.png" alt="">
+        <iframe class='video__iframe' id="player" src="https://www.youtube.com/embed/7sbbb7Dt3D8" frameborder="0"
+          allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <button id="play" class="video__button">
+        </button>
+      </section>
+
+      <!-- Секция Шаги -->
+      <section class="step" id="step">
+        <div class="step__inner">
+          <div class="step__heading">
+            <h2 class="step__heading-title">Как работает Nutrient Planner</h2>
+            <div class="step__heading-dots"></div>
+          </div>
+          <div class="step__list">
+            <div class="step__item">
+              <span class="step__item-counter">Шаг 1</span>
+              <h3 class="step__item-title">Анкетирование и сбор диетанамнеза</h3>
+              <p class="step__item-description">
+                Предоставьте клиенту доступ к анкете и дневнику питания или заполните их
+                сами. Анкета имеет подробные вопросы, но в то же время понятна и проста в
+                заполнении. Оцените метаболизм, диетанамнез, наличие заболеваний, пищевые предпочтения и другие
+                особенности клиента (пациента).
+              </p>
             </div>
-            <div class="form__column select">
-              <label>Период оплаты</label>
-              <select
-                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-                <option>12 месяцев</option>
-                <option>10 месяцев</option>
-                <option>8 месяцев</option>
-                <option>6 месяцев</option>
-              </select>
-              <span class="sale">Скидка 15%</span>
+            <div class="step__item">
+              <span class="step__item-counter">Шаг 2</span>
+              <h3 class="step__item-title">Создание рациона</h3>
+              <p class="step__item-description">
+                Сформируйте сбалансированное меню для клиента за считанные минуты.
+                Выберите ручной или автоматический режим с возможностью корректировки.
+                При этом учитывается более 80-ти факторов, включая анкетные данные. Кроме
+                того, вы сможете создать и использовать собственные диетологические
+                шаблоны.
+              </p>
             </div>
-          </div>
-          <div class="form__column">
-            <span class="form__column-title">Базовый</span>
-            <span class="form__column-total">3.990 руб.</span>
-            <span class="form__column-description">Экономия 1000р</span>
-          </div>
-          <div class="form__column">
-            <span class="form__column-title">Профессиональный</span>
-            <span class="form__column-total">50.898 руб.</span>
-            <span class="form__column-description">Экономия 10.000р</span>
-          </div>
-          <div class="form__action">
-            <button class="button button--inverse">Заказать</button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- Секция Демо -->
-    <section class="demo" id="demo">
-      <div class="demo__inner">
-        <h2 class="demo__title">Не знаете, какой тариф выбрать?</h2>
-        <p class="demo__description">Попробуйте 3-дневную демо-версию
-          сервиса, это абсолютно бесплатно!</p>
-        <button class="button button--inverse button--light">Перейти в демо</button>
-      </div>
-    </section>
-
-    <!-- Секция Отзывы -->
-    <section class="reviews" id="reviews">
-      <div class="reviews__inner">
-        <div class="reviews__heading">
-          <h2 class="reviews__heading-title">Отзывы</h2>
-          <div class="reviews__heading-dots"></div>
-        </div>
-        <div class="reviews__carousel">
-          <div class="reviews__item">
-            <div class="reviews__item-inner">
-              <div class="reviews__item-image">
-                <img src="https://fakeimg.pl/250x100/" alt="">
-              </div>
-              <figure class="reviews__item-content">
-                <h3 class="reviews__item-name">Константин <span>Константинопольский</span></h3>
-                <span class="reviews__item-subtitle">Черный пояс по диетологии</span>
-                <blockquote class="reviews__item-blockquote">
-                  Предоставьте клиенту доступ к анкете и дневнику питания или заполните их
-                  сами. Анкета имеет подробные вопросы, но в то же время понятна и проста в
-                  заполнении. Оцените метаболизм, диетанамнез, наличие заболеваний, пищевые предпочтения и другие
-                  особенности клиента (пациента).
-                </blockquote>
-              </figure>
-            </div>
-          </div>
-          <div class="reviews__item">
-            <div class="reviews__item-inner">
-              <div class="reviews__item-image">
-                <img src="https://fakeimg.pl/250x100/" alt="">
-              </div>
-              <figure class="reviews__item-content">
-                <h3 class="reviews__item-name">Михаил <span>Макаронников</span></h3>
-                <span class="reviews__item-subtitle">Черный пояс по диетологии</span>
-                <blockquote class="reviews__item-blockquote">
-                  Предоставьте клиенту доступ к анкете и дневнику питания или заполните их
-                  сами. Анкета имеет подробные вопросы, но в то же время понятна и проста в
-                  заполнении. Оцените метаболизм, диетанамнез, наличие заболеваний, пищевые предпочтения и другие
-                  особенности клиента (пациента).
-                </blockquote>
-              </figure>
-            </div>
-          </div>
-          <div class="reviews__item">
-            <div class="reviews__item-inner">
-              <div class="reviews__item-image">
-                <img src="https://fakeimg.pl/250x100/" alt="">
-              </div>
-              <figure class="reviews__item-content">
-                <h3 class="reviews__item-name">Михаил <span>Макаронников</span></h3>
-                <span class="reviews__item-subtitle">Черный пояс по диетологии</span>
-                <blockquote class="reviews__item-blockquote">
-                  Предоставьте клиенту доступ к анкете и дневнику питания или заполните их
-                  сами. Анкета имеет подробные вопросы, но в то же время понятна и проста в
-                  заполнении. Оцените метаболизм, диетанамнез, наличие заболеваний, пищевые предпочтения и другие
-                  особенности клиента (пациента).
-                </blockquote>
-              </figure>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Секция Partners -->
-    <section class="partners" id="partners">
-      <div class="partners__inner">
-        <div class="partners__heading">
-          <h2 class="partners__heading-title">Партнеры</h2>
-        </div>
-        <div class="partners__carousel">
-          <div class="partners__item">
-            <img src="img/partner-2.png">
-          </div>
-          <div class="partners__item">
-            <img src="img/partner-3.png">
-          </div>
-          <div class="partners__item">
-            <img src="img/partner-1.png">
-          </div>
-          <div class="partners__item">
-            <img src="img/partner-1.png">
-          </div>
-          <div class="partners__item">
-            <img src="img/partner-3.png">
-          </div>
-          <div class="partners__item">
-            <img src="img/partner-2.png">
-          </div>
-          <div class="partners__item">
-            <img src="img/partner-3.png">
-          </div>
-          <div class="partners__item">
-            <img src="img/partner-2.png">
-          </div>
-          <div class="partners__item">
-            <img src="img/partner-1.png">
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Секция FAQ -->
-    <section class="faq" id="reviews">
-      <div class="faq__inner">
-        <div class="faq__heading">
-          <h2 class="faq__heading-title">FAQ</h2>
-          <div class="faq__heading-dots"></div>
-        </div>
-        <div class="faq__carousel">
-          <div class="faq__item">
-            <div class="faq__item-inner">
-              <h3 class="faq__item-title">Nutrient Planner взял Оскар за лучшую актерскую игру</h3>
-              <p class="faq__item-description">
+            <div class="step__item">
+              <span class="step__item-counter">Шаг 3</span>
+              <h3 class="step__item-title">Формирование отчёта для клиента</h3>
+              <p class="step__item-description">
                 Предоставьте клиенту доступ к анкете и дневнику питания или заполните их
                 сами. Анкета имеет подробные вопросы, но в то же время понятна и проста в
                 заполнении. Оцените метаболизм, диетанамнез, наличие заболеваний, пищевые предпочтения и другие
@@ -545,38 +177,571 @@
               </p>
             </div>
           </div>
-          <div class="faq__item">
-            <div class="faq__item-inner">
-              <h3 class="faq__item-title">Nutrient Planner и философский камень</h3>
-              <p class="faq__item-description">
-                Предоставьте клиенту доступ к анкете и дневнику питания или заполните их
-                сами. Анкета имеет подробные вопросы, но в то же время понятна и проста в
-                заполнении. Оцените метаболизм, диетанамнез, наличие
-              </p>
+          <div class="step__carousel">
+            <div class="step__carousel-item">
+              <img class="step__carousel-image" src="img/slide.png" alt="">
+            </div>
+            <div class="step__carousel-item">
+              <img class="step__carousel-image" src="https://fakeimg.pl/355x221/" alt="">
+            </div>
+            <div class="step__carousel-item">
+              <img class="step__carousel-image" src="img/slide.png" alt="">
             </div>
           </div>
-          <div class="faq__item">
-            <div class="faq__item-inner">
-              <h3 class="faq__item-title">Nutrient Planner: Империя наносит ответный удар</h3>
-              <p class="faq__item-description">
-                Предоставьте клиенту доступ к анкете и дневнику питания или заполните их
-                сами. Анкета имеет подробные вопросы, но в то же время понятна и проста в
-                заполнении. Оцените метаболизм, диетанамнез, наличие заболеваний, пищевые предпочтения и другие
-                особенности клиента (пациента).
-              </p>
+      </section>
+
+      <!-- Секция Тарифы -->
+      <section class="rates" id="rates">
+        <div class="rates__inner">
+          <h2 class="rates__title">Тарифы</h2>
+          <span class="rates__subtitle">Выберите период оплаты и вариант</span>
+          <div class="rates__select select">
+            <select class="rates__show-sale"
+              data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+              <option value="Скидка 15%">12 месяцев</option>
+              <option value="Скидка 10%">6 месяцев</option>
+              <option value="Скидка 5%">3 месяцев</option>
+              <option value="Без скидки">1 месяц</option>
+            </select>
+            <span class="rates__select-sale">Скидка 15%</span>
+          </div>
+          <div class="rates__cards">
+            <div class="rates__cards-item">
+              <div class="rates__cards-heading">
+                <h3 class="rates__cards-title">Разовый</h3>
+                <span class="rates__cards-price">1490 Р</span>
+              </div>
+              <div class="rates__cards-content">
+                <p class="rates__cards-text">
+                  Создание базовых рационов на срок до 1 недели. Полноценный клиентский отчет и личный кабинет.
+                </p>
+              </div>
+              <div class="rates__cards-action">
+                <button class="rates__cards-button button button--inverse">Заказать</button>
+              </div>
+            </div>
+            <div class="rates__cards-item">
+              <div class="rates__cards-heading">
+                <h3 class="rates__cards-title">Базовый</h3>
+                <span class="rates__cards-price">2490 Р/мес</span>
+                <span class="rates__cards-saving">Экономия 1000 Р</span>
+              </div>
+              <div class="rates__cards-content">
+                <div class="rates__cards-select">
+                  <label class="rates__cards-label">Количество созданных
+                    рационов в месяц</label>
+                  <select class="rates__show-price "
+                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                    <option value="2990 Р/мес">До 10 рационов в месяц</option>
+                    <option value="3990 Р/мес">До 15 рационов в месяц</option>
+                    <option value="4990 Р/мес">До 20 рационов в месяц</option>
+                    <option value="7990 Р/мес">До 30 рационов в месяц</option>
+                  </select>
+                </div>
+                <p class="rates__cards-text">
+                  Сочетание расширенных возможностей и оптимальной стоимости. Создание райионов на срок до 1 месяца
+                </p>
+              </div>
+              <div class="rates__cards-action">
+                <button class="rates__cards-button button button--blue">Заказать</button>
+                <a href="#" class="rates__cards-promo">Есть промокод?</a>
+              </div>
+            </div>
+            <div class="rates__cards-item">
+              <div class="rates__cards-heading">
+                <h3 class="rates__cards-title">Профессиональный</h3>
+                <span class="rates__cards-price">3490 Р/мес</span>
+                <span class="rates__cards-saving">Экономия 1000 Р</span>
+              </div>
+              <div class="rates__cards-content">
+                <div class="rates__cards-select">
+                  <label class="rates__cards-label">Количество созданных
+                    рационов в месяц</label>
+                  <select disabled
+                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                    <option>До 10 рационов в месяц</option>
+                    <option>10 рационов в месяц</option>
+                    <option>10 рационов в месяц</option>
+                    <option>10 рационов в месяц</option>
+                    <option>10 рационов в месяц</option>
+                  </select>
+                </div>
+                <p class="rates__cards-text">
+                  Максимальный функционал для мастеров своего дела и тех, кто хочет ими стать. Создание собственных
+                  рецептов, профи сообщество и многое другое.
+                </p>
+              </div>
+              <div class="rates__cards-action">
+                <button disabled class="rates__cards-button button button--disable">В разработке</button>
+              </div>
             </div>
           </div>
-          <div class="faq__item">
-            <div class="faq__item-inner">
-              <h3 class="faq__item-title">Nutrient Planner 4: Electric Boogaloo</h3>
-              <p class="faq__item-description">
-                Предоставьте клиенту доступ к анкете и дневнику питания или заполните их
-                сами. Анкета имеет подробные вопросы, но в то же время понятна и проста в
-                заполнении. Оцените метаболизм,
-              </p>
+          <div class="rates__action">
+            <a href="javascript:void(0);" class="rates__action-button button button--grey">Развернуть сравнение</a>
+          </div>
+          <ul class="rates__list">
+            <li class="rates__caption">
+              <ul class="rates__caption-list">
+                <li class="rates__caption-item">Опции</li>
+                <li class="rates__caption-item">Базовый</li>
+                <li class="rates__caption-item">Профессиональный</li>
+              </ul>
+            </li>
+            <li class="rates__item">
+              <div class="rates__content">
+                <span class="rates__item-title"> Автоматическое планирование рациона, учитывая:</span>
+                <ul class="rates__content-list">
+                  <li class="rates__content-item"> - КБЖУ</li>
+                  <li class="rates__content-item">- Предпочитаемый тип питания</li>
+                  <li class="rates__content-item">- Физиологические особенности организма (основные антропометрические
+                    данные, активность, аллергии)
+                  </li>
+                </ul>
+              </div>
+              <div class="rates__value-wraper">
+                <div class="rates__item-value">
+                  <img src="img/check.svg" class="rates__item-image" alt="">
+                </div>
+                <div class="rates__item-value">
+                  <img src="img/check.svg" class="rates__item-image" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="rates__item">
+              <div class="rates__content">
+                <span class="rates__item-title"> Автоматическое планирование рациона, учитывая:</span>
+                <ul class="rates__content-list">
+                  <li class="rates__content-item">- Витамины</li>
+                  <li class="rates__content-item">- Минералы</li>
+                  <li class="rates__content-item">- Аминокислоты</li>
+                  <li class="rates__content-item">- ПНЖК</li>
+                  <li class="rates__content-item">- Гликемическая нагрузка</li>
+                </ul>
+              </div>
+              <div class="rates__value-wraper">
+                <div class="rates__item-value">
+                  <img src="img/check.svg" class="rates__item-image" alt="">
+                </div>
+                <div class="rates__item-value">
+                  <img src="img/check.svg" class="rates__item-image" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="rates__item">
+              <div class="rates__content">
+                <span class="rates__item-title">Возможность изменять автоматически рассчитанные индивидуальные нормы
+                  потребления нутриентов</span>
+              </div>
+              <div class="rates__value-wraper">
+                <div class="rates__item-value">
+                  <img src="img/nope.svg" class="rates__item-image shadow--padding" alt="">
+                </div>
+                <div class="rates__item-value">
+                  <img src="img/check.svg" class="rates__item-image" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="rates__item">
+              <div class="rates__content">
+                <span class="rates__item-title">Формирование и сохранение рассчитанного меню для клиента
+                  (пациента)</span>
+              </div>
+              <div class="rates__value-wraper">
+                <div class="rates__item-value">
+                  <img src="img/check.svg" class="rates__item-image" alt="">
+                </div>
+                <div class="rates__item-value">
+                  <img src="img/check.svg" class="rates__item-image" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="rates__item">
+              <div class="rates__content">
+                <span class="rates__item-title">Автоматический расчёт максимально персонализированного меню,
+                  сбалансированного по нутриентам с учётом физиологических особенностей клиента</span>
+              </div>
+              <div class="rates__value-wraper">
+                <div class="rates__item-value rates__parameters button--grey">
+                  <span class="rates__item-parameters">От 1 дня</span>
+                  <span class="rates__item-parameters">до 1 месяца</span>
+                </div>
+                <div class="rates__item-value rates__parameters button--grey ">
+                  <span class="rates__item-parameters">От 1 дня</span>
+                  <span class="rates__item-parameters">до 3 месяцев</span>
+                </div>
+              </div>
+            </li>
+            <li class="rates__item">
+              <div class="rates__content">
+                <span class="rates__item-title">Количество клиентов (пациентов) в картотеке</span>
+              </div>
+              <div class="rates__value-wraper">
+                <div class="rates__item-value rates__item-value rates__parameters button--grey">
+                  <span class="rates__item-parameters">Неограниченно</span>
+                </div>
+                <div class="rates__item-value rates__item-value rates__parameters button--grey">
+                  <span class="rates__item-parameters">Неограниченно</span>
+                </div>
+              </div>
+            </li>
+            <li class="rates__item">
+              <div class="rates__content">
+                <span class="rates__item-title">Личный кабинет специалиста. Пилотная версия</span>
+              </div>
+              <div class="rates__value-wraper">
+                <div class="rates__item-value">
+                  <img src="img/check.svg" class="rates__item-image" alt="">
+                </div>
+                <div class="rates__item-value">
+                  <img src="img/check.svg" class="rates__item-image" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="rates__item">
+              <div class="rates__content">
+                <span class="rates__item-title">Автоматическое создание клиентского отчёта с возможностью
+                  редактирования,
+                  который включает:</span>
+                <ul class="rates__content-list">
+                  <li class="rates__content-item">- Данные по клиенту (пациенту)</li>
+                  <li class="rates__content-item">- Наглядный графический анализ фактического рациона питания </li>
+                  <li class="rates__content-item">- Меню</li>
+                  <li class="rates__content-item">- Рекомендации по питанию и образу жизни</li>
+                  <li class="rates__content-item">- Время приёмов пищи</li>
+                  <li class="rates__content-item">- Пояснения по работе некоторых систем организма</li>
+                  <li class="rates__content-item">- Рекомендации по приему БАДов </li>
+                  <li class="rates__content-item">- Другие разделы</li>
+                </ul>
+              </div>
+              <div class="rates__value-wraper">
+                <div class="rates__item-value">
+                  <img src="img/check.svg" class="rates__item-image" alt="">
+                </div>
+                <div class="rates__item-value">
+                  <img src="img/check.svg" class="rates__item-image" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="rates__item">
+              <div class="rates__content">
+                <span class="rates__item-title">Добавление собственных рецептов с их последующим автоматическим расчетом
+                  по
+                  всем нутриентам</span>
+              </div>
+              <div class="rates__value-wraper">
+                <div class="rates__item-value">
+                  <img src="img/nope.svg" class="rates__item-image shadow--padding" alt="">
+                </div>
+                <div class="rates__item-value">
+                  <img src="img/check.svg" class="rates__item-image" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="rates__item">
+              <div class="rates__content">
+                <span class="rates__item-title">Ручной режим создания меню</span>
+              </div>
+              <div class="rates__value-wraper">
+                <div class="rates__item-value">
+                  <img src="img/nope.svg" class="rates__item-image shadow--padding" alt="">
+                </div>
+                <div class="rates__item-value">
+                  <img src="img/check.svg" class="rates__item-image" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="rates__item">
+              <div class="rates__content">
+                <span class="rates__item-title">Доступ к разделу «Анализы»*</span>
+              </div>
+              <div class="rates__value-wraper">
+                <div class="rates__item-value">
+                  <img src="img/nope.svg" class="rates__item-image shadow--padding" alt="">
+                </div>
+                <div class="rates__item-value">
+                  <img src="img/check.svg" class="rates__item-image" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="rates__item">
+              <div class="rates__content">
+                <span class="rates__item-title">Составление продуктового списка покупок для клиента к конкретному
+                  назначенному рациону*</span>
+              </div>
+              <div class="rates__value-wraper">
+                <div class="rates__item-value">
+                  <img src="img/nope.svg" class="rates__item-image shadow--padding" alt="">
+                </div>
+                <div class="rates__item-value">
+                  <img src="img/check.svg" class="rates__item-image" alt="">
+                </div>
+              </div>
+              <div class="rates__option">
+                <span class="rates__option-text">
+                  * Опция находится в разработке и станет доступна во второй версии сервиса.
+                </span>
+              </div>
+            </li>
+          </ul>
+          <div class="rates__action">
+            <a href="javascript:void(0);" class="rates__action-button button button--grey button--hide">Развернуть
+              сравнение</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция Демо -->
+      <section class="demo" id="demo">
+        <div class="demo__inner">
+          <h2 class="demo__title">Не знаете, какой тариф выбрать?</h2>
+          <p class="demo__description">Попробуйте 3-дневную демо-версию
+            сервиса, это абсолютно бесплатно!</p>
+          <button class="button button--inverse button--light">Перейти в демо</button>
+        </div>
+      </section>
+
+      <!-- Секция Отзывы -->
+      <section class="reviews" id="reviews">
+        <div class="reviews__inner">
+          <div class="reviews__heading">
+            <h2 class="reviews__heading-title">Отзывы</h2>
+            <div class="reviews__heading-dots"></div>
+          </div>
+          <div class="reviews__carousel">
+            <div class="reviews__item">
+              <div class="reviews__item-inner">
+                <div class="reviews__item-image">
+                  <img src="https://fakeimg.pl/250x100/" alt="">
+                </div>
+                <div class="reviews__item-content">
+                  <h3 class="reviews__item-name">Константин <span>Константинопольский</span></h3>
+                  <span class="reviews__item-subtitle">Черный пояс по диетологии</span>
+                  <blockquote class="reviews__item-blockquote">
+                    Предоставьте клиенту доступ к анкете и дневнику питания или заполните их
+                    сами. Анкета имеет подробные вопросы, но в то же время понятна и проста в
+                    заполнении. Оцените метаболизм, диетанамнез, наличие заболеваний, пищевые предпочтения и другие
+                    особенности клиента (пациента).
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-inner">
+                <div class="reviews__item-image">
+                  <img src="https://fakeimg.pl/250x100/" alt="">
+                </div>
+                <div class="reviews__item-content">
+                  <h3 class="reviews__item-name">Михаил <span>Макаронников</span></h3>
+                  <span class="reviews__item-subtitle">Черный пояс по диетологии</span>
+                  <blockquote class="reviews__item-blockquote">
+                    Предоставьте клиенту доступ к анкете и дневнику питания или заполните их
+                    сами. Анкета имеет подробные вопросы, но в то же время понятна и проста в
+                    заполнении. Оцените метаболизм, диетанамнез, наличие заболеваний, пищевые предпочтения и другие
+                    особенности клиента (пациента).
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-inner">
+                <div class="reviews__item-image">
+                  <img src="https://fakeimg.pl/250x100/" alt="">
+                </div>
+                <div class="reviews__item-content">
+                  <h3 class="reviews__item-name">Михаил <span>Макаронников</span></h3>
+                  <span class="reviews__item-subtitle">Черный пояс по диетологии</span>
+                  <blockquote class="reviews__item-blockquote">
+                    Предоставьте клиенту доступ к анкете и дневнику питания или заполните их
+                    сами. Анкета имеет подробные вопросы, но в то же время понятна и проста в
+                    заполнении. Оцените метаболизм, диетанамнез, наличие заболеваний, пищевые предпочтения и другие
+                    особенности клиента (пациента).
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Секция Partners -->
+      <section class="partners" id="partners">
+        <div class="partners__inner">
+          <div class="partners__heading">
+            <h2 class="partners__heading-title">Партнеры</h2>
+          </div>
+          <div class="partners__carousel">
+            <div class="partners__item">
+              <img src="img/partner-2.png">
+            </div>
+            <div class="partners__item">
+              <img src="img/partner-3.png">
+            </div>
+            <div class="partners__item">
+              <img src="img/partner-1.png">
+            </div>
+            <div class="partners__item">
+              <img src="img/partner-1.png">
+            </div>
+            <div class="partners__item">
+              <img src="img/partner-3.png">
+            </div>
+            <div class="partners__item">
+              <img src="img/partner-2.png">
+            </div>
+            <div class="partners__item">
+              <img src="img/partner-3.png">
+            </div>
+            <div class="partners__item">
+              <img src="img/partner-2.png">
+            </div>
+            <div class="partners__item">
+              <img src="img/partner-1.png">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Секция FAQ -->
+      <section class="faq" id="reviews">
+        <div class="faq__inner">
+          <div class="faq__heading">
+            <h2 class="faq__heading-title">FAQ</h2>
+            <div class="faq__heading-dots"></div>
+          </div>
+          <div class="faq__carousel">
+            <div class="faq__item">
+              <div class="faq__item-inner">
+                <h3 class="faq__item-title">Nutrient Planner взял Оскар за лучшую актерскую игру</h3>
+                <p class="faq__item-description">
+                  Предоставьте клиенту доступ к анкете и дневнику питания или заполните их
+                  сами. Анкета имеет подробные вопросы, но в то же время понятна и проста в
+                  заполнении. Оцените метаболизм, диетанамнез, наличие заболеваний, пищевые предпочтения и другие
+                  особенности клиента (пациента).
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__item-inner">
+                <h3 class="faq__item-title">Nutrient Planner и философский камень</h3>
+                <p class="faq__item-description">
+                  Предоставьте клиенту доступ к анкете и дневнику питания или заполните их
+                  сами. Анкета имеет подробные вопросы, но в то же время понятна и проста в
+                  заполнении. Оцените метаболизм, диетанамнез, наличие
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__item-inner">
+                <h3 class="faq__item-title">Nutrient Planner: Империя наносит ответный удар</h3>
+                <p class="faq__item-description">
+                  Предоставьте клиенту доступ к анкете и дневнику питания или заполните их
+                  сами. Анкета имеет подробные вопросы, но в то же время понятна и проста в
+                  заполнении. Оцените метаболизм, диетанамнез, наличие заболеваний, пищевые предпочтения и другие
+                  особенности клиента (пациента).
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__item-inner">
+                <h3 class="faq__item-title">Nutrient Planner 4: Electric Boogaloo</h3>
+                <p class="faq__item-description">
+                  Предоставьте клиенту доступ к анкете и дневнику питания или заполните их
+                  сами. Анкета имеет подробные вопросы, но в то же время понятна и проста в
+                  заполнении. Оцените метаболизм,
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="faq__button button button--inverse">К справочнику</button>
+        </div>
+      </section>
+
+      <!-- Секция contact-us -->
+      <section class="contact-us" id="contact-us">
+        <h2 class="contact-us__title">Напишите нам!</h2>
+        <div class="contact-us__inner">
+          <form class="contact-us__form form">
+            <!-- за включение border ошибки отвечает класс .errore для form__input-->
+            <input class="contact-us__input form__input" required type="text" id="name"
+              placeholder="Константин Константинопольский">
+            <!-- за включение border ошибки отвечает класс .errore для form__input-->
+            <input class="contact-us__input form__input" required type="text" id="mail" placeholder="name@example.com">
+            <textarea class="contact-us__textarea form__textarea"></textarea>
+            <div class="contact-us__row form__row">
+              <!-- за включение border ошибки отвечает класс .errore для form__input-->
+              <input class="form__input only_number" required type="text" id="telephone"
+                placeholder="+6 (666) 666-13-66">
+              <div class="contact-us__social">
+                <span class="contact-us__social-title">Выберите способ связи</span>
+                <div class="contact-us__social-wraper">
+                  <a href="#" class="contact-us__social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="contact-us__social-icon" width="32" height="33"
+                      viewBox="0 0 32 33" fill="none">
+                      <path
+                        d="M4.7966 0.0382832C4.17646 0.106716 3.4775 0.32957 2.8643 0.648331C1.42188 1.4093 0.349448 2.89003 0.0650963 4.52155C0.00343282 4.86779 0 5.33397 0 16.1072V27.3328L0.0788276 27.6824C0.572136 29.9139 2.14818 31.4907 4.37862 31.9842L4.72807 32.0631H27.272L27.6214 31.9842C29.8518 31.4907 31.4279 29.9139 31.9212 27.6824L32 27.3328V16.1072C32 5.33404 31.9966 4.86785 31.9349 4.52168C31.8493 4.02115 31.6779 3.51738 31.4176 2.99637C30.6056 1.36135 28.9747 0.230163 27.1452 0.0313509C26.7272 -0.0131689 5.20084 -0.00973449 4.7966 0.0382197V0.0382832ZM17.0381 5.73847C18.2167 5.88589 19.1692 6.17037 20.2141 6.68108C21.2419 7.18498 21.8998 7.6614 22.77 8.52865C23.5854 9.34781 24.0377 9.96829 24.5174 10.9314C25.1855 12.2751 25.5658 13.8724 25.6308 15.6308C25.6548 16.2306 25.6377 16.3643 25.5006 16.5357C25.2403 16.8682 24.6681 16.8133 24.4728 16.4397C24.4111 16.3164 24.394 16.2102 24.3734 15.7302C24.3391 14.9932 24.2878 14.5168 24.185 13.9478C23.7807 11.7164 22.7118 9.93401 21.0055 8.65547C19.5837 7.58604 18.1139 7.06496 16.1885 6.95188C15.5375 6.91417 15.4244 6.89019 15.2771 6.77711C15.003 6.56113 14.9893 6.05386 15.2531 5.81739C15.4141 5.66991 15.5272 5.64936 16.0857 5.66653C16.3769 5.67677 16.8051 5.71105 17.0381 5.73853V5.73847ZM9.20598 6.10868C9.32594 6.14983 9.51093 6.2458 9.61716 6.31436C10.2681 6.7462 12.0805 9.06676 12.6733 10.2254C13.0124 10.8869 13.1255 11.377 13.0193 11.7404C12.9096 12.1311 12.7281 12.3368 11.9161 12.9915C11.5906 13.2554 11.2856 13.5262 11.2378 13.5982C11.1144 13.7764 11.0149 14.1261 11.0149 14.3728C11.0184 14.9452 11.3884 15.9838 11.875 16.7825C12.2518 17.4029 12.9268 18.1981 13.5948 18.8083C14.3794 19.5281 15.0715 20.0182 15.8527 20.4056C16.8565 20.906 17.4698 21.0329 17.9187 20.8237C18.0317 20.7723 18.1516 20.7038 18.1893 20.673C18.2235 20.6421 18.4874 20.3199 18.7752 19.9634C19.3302 19.2641 19.4569 19.1511 19.8373 19.0208C20.3204 18.8563 20.8137 18.9008 21.3105 19.1544C21.6874 19.3499 22.5097 19.8606 23.0407 20.2307C23.7396 20.7209 25.2334 21.9412 25.4356 22.1846C25.7919 22.6233 25.8535 23.1854 25.6137 23.8059C25.3602 24.4605 24.3734 25.6876 23.6848 26.2121C23.0612 26.6851 22.6193 26.8667 22.0368 26.8942C21.5572 26.9182 21.3585 26.877 20.7452 26.6234C15.9349 24.6388 12.0943 21.6772 9.04496 17.6086C7.45188 15.4834 6.23895 13.2794 5.4098 10.9931C4.92679 9.65977 4.90282 9.0805 5.3002 8.3984C5.47153 8.11048 6.20132 7.39753 6.73232 6.9999C7.61627 6.34177 8.02401 6.09838 8.3495 6.02988C8.57218 5.98186 8.95926 6.01958 9.20598 6.10874V6.10868ZM17.2745 8.22356C19.3542 8.52858 20.9645 9.49523 22.0197 11.0651C22.6125 11.9495 22.9824 12.9881 23.1092 14.102C23.1537 14.5099 23.1537 15.2538 23.1058 15.3772C23.0612 15.4937 22.9173 15.6514 22.794 15.7165C22.6604 15.7851 22.376 15.7782 22.2184 15.6959C21.9546 15.5623 21.8758 15.3497 21.8758 14.7739C21.8758 13.8861 21.6462 12.9503 21.2489 12.2237C20.7966 11.3942 20.1388 10.7087 19.3371 10.2322C18.6484 9.82086 17.6309 9.51578 16.7024 9.44035C16.3666 9.413 16.1816 9.34444 16.0548 9.19702C15.8595 8.97423 15.8389 8.67257 16.0034 8.42237C16.1816 8.1447 16.4556 8.10018 17.2745 8.22356ZM18.0043 10.8114C18.6792 10.9554 19.1966 11.2125 19.6386 11.6273C20.2073 12.1653 20.5191 12.8166 20.6561 13.7524C20.7486 14.3625 20.7109 14.6025 20.495 14.8013C20.2929 14.9864 19.9195 14.9932 19.6934 14.8185C19.5289 14.695 19.4775 14.5648 19.4398 14.2117C19.3953 13.7421 19.3131 13.4131 19.1727 13.108C18.8711 12.4602 18.3401 12.1243 17.4424 12.0145C17.021 11.9632 16.8942 11.9151 16.7572 11.7541C16.5071 11.4558 16.603 10.9726 16.949 10.7943C17.0793 10.7292 17.1341 10.7223 17.4219 10.7395C17.6 10.7497 17.8639 10.7806 18.0043 10.8114Z" />
+                    </svg>
+                  </a>
+                  <a href="#" class="contact-us__social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="contact-us__social-icon" width="32" height="32"
+                      viewBox="0 0 32 32" fill="none">
+                      <path
+                        d="M16 0C7.16129 0 0 7.16129 0 16C0 24.8387 7.16129 32 16 32C24.8387 32 32 24.8387 32 16C32 7.16129 24.8387 0 16 0ZM23.8581 10.9613L21.2323 23.3355C21.0387 24.2129 20.5161 24.4258 19.7871 24.0129L15.7871 21.0645L13.8581 22.9226C13.6452 23.1355 13.4645 23.3161 13.0516 23.3161L13.3355 19.2452L20.7484 12.5484C21.071 12.2645 20.6774 12.1032 20.2516 12.3871L11.0903 18.1548L7.14193 16.9226C6.28387 16.6516 6.26452 16.0645 7.32258 15.6516L22.7484 9.70323C23.4645 9.44516 24.0903 9.87742 23.8581 10.9613Z" />
+                    </svg>
+                  </a>
+                  <a href="#" class="contact-us__social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="contact-us__social-icon" width="25" height="25"
+                      viewBox="0 0 25 25" fill="none">
+                      <path
+                        d="M12.5 5.06696C8.44308 5.06696 5.14509 8.36496 5.13951 12.4219C5.13951 13.8114 5.53013 15.1674 6.26674 16.3337L6.43973 16.6127L5.69754 19.3248L8.48214 18.5938L8.75 18.7556C9.87723 19.4252 11.1719 19.7824 12.4944 19.7824H12.5C16.5513 19.7824 19.9386 16.4844 19.9386 12.4275C19.9386 10.4632 19.0904 8.61607 17.7009 7.22656C16.3058 5.83147 14.4643 5.06696 12.5 5.06696ZM16.8248 15.5804C16.6406 16.0993 15.7589 16.5681 15.3348 16.6295C14.6317 16.7355 14.0848 16.6797 12.6842 16.077C10.4688 15.1172 9.01786 12.885 8.90625 12.74C8.79464 12.5949 8.00223 11.5402 8.00223 10.452C8.00223 9.36384 8.57143 8.82812 8.7779 8.60491C8.9788 8.3817 9.21875 8.32589 9.36942 8.32589C9.51451 8.32589 9.66518 8.32589 9.79353 8.33147C9.92745 8.33705 10.1116 8.28125 10.2902 8.71094C10.4743 9.15179 10.9152 10.24 10.971 10.3516C11.0268 10.4632 11.0658 10.5915 10.9877 10.7366C10.5636 11.5848 10.1116 11.5513 10.3404 11.942C11.1942 13.4096 12.048 13.9174 13.3482 14.5703C13.5714 14.6819 13.6998 14.6652 13.8281 14.5145C13.9565 14.3694 14.3806 13.8672 14.5257 13.6496C14.6708 13.4263 14.8214 13.4654 15.0223 13.5379C15.2232 13.6105 16.3114 14.1462 16.5346 14.2578C16.7578 14.3694 16.9029 14.4252 16.9587 14.5145C17.0089 14.6205 17.0089 15.067 16.8248 15.5804ZM22.3214 0H2.67857C1.19978 0 0 1.19978 0 2.67857V22.3214C0 23.8002 1.19978 25 2.67857 25H22.3214C23.8002 25 25 23.8002 25 22.3214V2.67857C25 1.19978 23.8002 0 22.3214 0ZM12.4944 21.2723C11.01 21.2723 9.55357 20.8984 8.26451 20.1953L3.57143 21.4286L4.82701 16.8415C4.05134 15.5022 3.64397 13.9788 3.64397 12.4163C3.64955 7.53906 7.61719 3.57143 12.4944 3.57143C14.8605 3.57143 17.0815 4.49219 18.7556 6.16629C20.4241 7.8404 21.4286 10.0614 21.4286 12.4275C21.4286 17.3047 17.3717 21.2723 12.4944 21.2723Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-us__action form__action">
+              <button class="button contact-us__button button--inverse">Отправить</button>
+            </div>
+          </form>
+          <div class="contacts">
+            <a href="mail-to:info@nplanner.ru" class="contacts__link">info@nplanner.ru</a>
+            <a href="tel:+78126037691" class="contacts__link">+7 (812) 603-76-91</a>
+            <div class="contacts__social-wraper">
+              <a href="#" class="contacts__social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" class="contacts__social-icon" width="32" height="32"
+                  viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M20.912 0H11.088C2.12267 0 0 2.12267 0 11.088V20.912C0 29.8773 2.12267 32 11.088 32H20.912C29.8773 32 32 29.8773 32 20.912V11.088C32 2.12267 29.8547 0 20.912 0ZM25.8347 22.8307H23.5093C22.6293 22.8307 22.3573 22.1307 20.776 20.528C19.3987 19.1947 18.7893 19.0147 18.4507 19.0147C17.976 19.0147 17.84 19.1507 17.84 19.8053V21.9053C17.84 22.4707 17.66 22.8093 16.1693 22.8093C13.708 22.8093 10.9747 21.3187 9.056 18.54C6.16533 14.476 5.37333 11.4267 5.37333 10.7947C5.37333 10.456 5.50933 10.14 6.164 10.14H8.48933C9.076 10.14 9.30267 10.4107 9.52933 11.0427C10.68 14.3627 12.6 17.276 13.3907 17.276C13.684 17.276 13.82 17.14 13.82 16.396V12.9613C13.7293 11.38 12.8933 11.2453 12.8933 10.6813C12.8933 10.4093 13.12 10.1387 13.48 10.1387H17.1387C17.636 10.1387 17.816 10.4093 17.816 10.996V15.6267C17.816 16.1227 18.0427 16.304 18.1773 16.304C18.4707 16.304 18.72 16.1227 19.2613 15.5813C20.9333 13.7067 22.1293 10.816 22.1293 10.816C22.288 10.4773 22.5587 10.1613 23.1467 10.1613H25.472C26.172 10.1613 26.3307 10.5213 26.172 11.0187C25.8787 12.3747 23.0333 16.3933 23.0333 16.3933C22.7853 16.8 22.6947 16.98 23.0333 17.4333C23.2813 17.772 24.0947 18.472 24.6373 19.104C25.6307 20.2333 26.3973 21.1813 26.6013 21.8373C26.828 22.4907 26.488 22.8293 25.8333 22.8293L25.8347 22.8307Z" />
+                </svg>
+              </a>
+              <a href="#" class="contacts__social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" class="contacts__social-icon" width="32" height="33"
+                  viewBox="0 0 32 33" fill="none">
+                  <path
+                    d="M16 12.1948C15.2465 12.1951 14.51 12.4189 13.8837 12.8379C13.2573 13.2569 12.7692 13.8522 12.481 14.5487C12.1929 15.2452 12.1176 16.0115 12.2648 16.7508C12.412 17.4901 12.775 18.1691 13.3079 18.702C13.8408 19.2349 14.5196 19.5977 15.2587 19.7447C15.9977 19.8916 16.7637 19.8161 17.4598 19.5276C18.1559 19.239 18.7508 18.7505 19.1694 18.1237C19.588 17.497 19.8114 16.7601 19.8114 16.0063C19.8107 14.9954 19.4088 14.0262 18.6942 13.3115C17.9795 12.5968 17.0105 12.1952 16 12.1948ZM24.9079 9.26509C24.7139 8.77335 24.421 8.32673 24.0474 7.95293C23.6737 7.57913 23.2273 7.28612 22.7357 7.09209C21.2357 6.49971 17.6643 6.63262 16 6.63262C14.3357 6.63262 10.7679 6.49471 9.26357 7.09209C8.77203 7.28612 8.32559 7.57913 7.95193 7.95293C7.57828 8.32673 7.28539 8.77335 7.09143 9.26509C6.5 10.7657 6.63214 14.3421 6.63214 16.0056C6.63214 17.6691 6.5 21.2412 7.09429 22.7468C7.28825 23.2386 7.58114 23.6852 7.95479 24.059C8.32844 24.4328 8.77489 24.7258 9.26643 24.9198C10.7664 25.5122 14.3379 25.3793 16.0029 25.3793C17.6679 25.3793 21.2343 25.5172 22.7386 24.9198C23.2301 24.7258 23.6766 24.4328 24.0502 24.059C24.4239 23.6852 24.7168 23.2386 24.9107 22.7468C25.5071 21.2462 25.37 17.6698 25.37 16.0063C25.37 14.3428 25.5071 10.7714 24.9107 9.2658L24.9079 9.26509ZM16 21.8658C14.8416 21.8658 13.7091 21.5221 12.7459 20.8783C11.7827 20.2344 11.032 19.3193 10.5887 18.2486C10.1454 17.178 10.0294 15.9998 10.2554 14.8632C10.4814 13.7266 11.0392 12.6825 11.8584 11.8631C12.6775 11.0436 13.7212 10.4855 14.8573 10.2595C15.9935 10.0334 17.1712 10.1494 18.2414 10.5929C19.3117 11.0364 20.2264 11.7874 20.87 12.751C21.5136 13.7146 21.8571 14.8474 21.8571 16.0063C21.8581 16.7761 21.7072 17.5384 21.4132 18.2498C21.1192 18.9611 20.6878 19.6074 20.1437 20.1517C19.5996 20.696 18.9536 21.1275 18.2425 21.4217C17.5315 21.7158 16.7694 21.8667 16 21.8658ZM22.0986 11.2687C21.8281 11.2689 21.5638 11.1888 21.3388 11.0386C21.1139 10.8884 20.9386 10.6748 20.835 10.4249C20.7314 10.175 20.7042 9.90002 20.7569 9.63467C20.8096 9.36932 20.9397 9.12555 21.1309 8.93421C21.3221 8.74286 21.5657 8.61253 21.8309 8.5597C22.0961 8.50687 22.371 8.53392 22.6209 8.63741C22.8707 8.74091 23.0843 8.91621 23.2345 9.14114C23.3848 9.36607 23.465 9.63052 23.465 9.90105C23.4658 10.0807 23.431 10.2587 23.3629 10.4249C23.2947 10.5911 23.1944 10.7422 23.0677 10.8696C22.941 10.9969 22.7904 11.098 22.6246 11.167C22.4588 11.2359 22.281 11.2715 22.1014 11.2716L22.0986 11.2687ZM28.5714 0H3.42857C2.51926 0 1.64719 0.361366 1.00421 1.0046C0.361223 1.64784 0 2.52025 0 3.42993L0 28.5827C0 29.4924 0.361223 30.3648 1.00421 31.008C1.64719 31.6513 2.51926 32.0126 3.42857 32.0126H28.5714C29.4807 32.0126 30.3528 31.6513 30.9958 31.008C31.6388 30.3648 32 29.4924 32 28.5827V3.42993C32 2.52025 31.6388 1.64784 30.9958 1.0046C30.3528 0.361366 29.4807 0 28.5714 0ZM27.3486 20.7225C27.2564 22.5539 26.8386 24.1767 25.5021 25.5101C24.1657 26.8435 22.545 27.2701 20.7164 27.3572C18.83 27.4637 13.1743 27.4637 11.2879 27.3572C9.45714 27.2651 7.84071 26.8463 6.50214 25.5101C5.16357 24.1738 4.74286 22.5503 4.65571 20.7225C4.54929 18.8346 4.54929 13.1759 4.65571 11.2902C4.74786 9.45874 5.16071 7.83595 6.50214 6.50257C7.84357 5.16918 9.46429 4.74759 11.2879 4.66041C13.1743 4.55394 18.83 4.55394 20.7164 4.66041C22.5471 4.75259 24.1686 5.17133 25.5021 6.50757C26.8357 7.84381 27.2614 9.46731 27.3486 11.2987C27.455 13.1795 27.455 18.8332 27.3486 20.7225Z" />
+                </svg>
+              </a>
+              <a href="#" class="contacts__social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" class="contacts__social-icon" width="32" height="32"
+                  viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M16 0C7.16129 0 0 7.16129 0 16C0 24.8387 7.16129 32 16 32C24.8387 32 32 24.8387 32 16C32 7.16129 24.8387 0 16 0ZM23.8581 10.9613L21.2323 23.3355C21.0387 24.2129 20.5161 24.4258 19.7871 24.0129L15.7871 21.0645L13.8581 22.9226C13.6452 23.1355 13.4645 23.3161 13.0516 23.3161L13.3355 19.2452L20.7484 12.5484C21.071 12.2645 20.6774 12.1032 20.2516 12.3871L11.0903 18.1548L7.14193 16.9226C6.28387 16.6516 6.26452 16.0645 7.32258 15.6516L22.7484 9.70323C23.4645 9.44516 24.0903 9.87742 23.8581 10.9613Z" />
+                </svg>
+              </a>
+              <a href="#" class="contacts__social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" class="contacts__social-icon" width="25" height="25"
+                  viewBox="0 0 25 25" fill="none">
+                  <path
+                    d="M12.5 5.06696C8.44308 5.06696 5.14509 8.36496 5.13951 12.4219C5.13951 13.8114 5.53013 15.1674 6.26674 16.3337L6.43973 16.6127L5.69754 19.3248L8.48214 18.5938L8.75 18.7556C9.87723 19.4252 11.1719 19.7824 12.4944 19.7824H12.5C16.5513 19.7824 19.9386 16.4844 19.9386 12.4275C19.9386 10.4632 19.0904 8.61607 17.7009 7.22656C16.3058 5.83147 14.4643 5.06696 12.5 5.06696ZM16.8248 15.5804C16.6406 16.0993 15.7589 16.5681 15.3348 16.6295C14.6317 16.7355 14.0848 16.6797 12.6842 16.077C10.4688 15.1172 9.01786 12.885 8.90625 12.74C8.79464 12.5949 8.00223 11.5402 8.00223 10.452C8.00223 9.36384 8.57143 8.82812 8.7779 8.60491C8.9788 8.3817 9.21875 8.32589 9.36942 8.32589C9.51451 8.32589 9.66518 8.32589 9.79353 8.33147C9.92745 8.33705 10.1116 8.28125 10.2902 8.71094C10.4743 9.15179 10.9152 10.24 10.971 10.3516C11.0268 10.4632 11.0658 10.5915 10.9877 10.7366C10.5636 11.5848 10.1116 11.5513 10.3404 11.942C11.1942 13.4096 12.048 13.9174 13.3482 14.5703C13.5714 14.6819 13.6998 14.6652 13.8281 14.5145C13.9565 14.3694 14.3806 13.8672 14.5257 13.6496C14.6708 13.4263 14.8214 13.4654 15.0223 13.5379C15.2232 13.6105 16.3114 14.1462 16.5346 14.2578C16.7578 14.3694 16.9029 14.4252 16.9587 14.5145C17.0089 14.6205 17.0089 15.067 16.8248 15.5804ZM22.3214 0H2.67857C1.19978 0 0 1.19978 0 2.67857V22.3214C0 23.8002 1.19978 25 2.67857 25H22.3214C23.8002 25 25 23.8002 25 22.3214V2.67857C25 1.19978 23.8002 0 22.3214 0ZM12.4944 21.2723C11.01 21.2723 9.55357 20.8984 8.26451 20.1953L3.57143 21.4286L4.82701 16.8415C4.05134 15.5022 3.64397 13.9788 3.64397 12.4163C3.64955 7.53906 7.61719 3.57143 12.4944 3.57143C14.8605 3.57143 17.0815 4.49219 18.7556 6.16629C20.4241 7.8404 21.4286 10.0614 21.4286 12.4275C21.4286 17.3047 17.3717 21.2723 12.4944 21.2723Z" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
+<<<<<<< Updated upstream
+      </section>
+=======
         <button class="button button button--inverse">К справочнику</button>
       </div>
     </section>
@@ -589,21 +754,31 @@
           <!-- за включение border ошибки отвечает класс .errore для form__input-->
           <input class="form__input" required type="text" id="name" placeholder="Константин Константинопольский">
           <!-- за включение border ошибки отвечает класс .errore для form__input-->
-          <input class="form__input" required type="text" id="mail" placeholder="name@example.com">
+          <input class="form__input" required type="text" id="mail" placeholder="const@example.com">
           <textarea class="form__textarea"></textarea>
+          <div class="form__row">
+            <!-- за включение border ошибки отвечает класс .errore для form__input-->
+            <input class="form__input only_number" required type="text" id="telephone" placeholder="+6 (666) 666-13-66">
+            <div class="form__social">
+              <span class="form__social-title">Выберите способ связи</span>
+              <a href="#" class="form__social-link"></a>
+              <a href="#" class="form__social-link"></a>
+              <a href="#" class="form__social-link"></a>
+            </div>
+          </div>
+
         </form>
       </div>
     </section>
 
+>>>>>>> Stashed changes
 
+    </main>
 
     <!-- Footer -->
     <include src="assets/templates/footer.html"></include>
 
-  </main>
-
-
-
+  </div>
 
   <!-- Скрипты -->
   <script src="js/jquery-3.4.1.min.js"></script>

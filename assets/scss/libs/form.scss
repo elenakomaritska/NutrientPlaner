@@ -1,13 +1,16 @@
-input:required,
-textarea,
-input,
-input:focus {
+<<<<<<< Updated upstream
+.form__input,
+.form__textarea {
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
+=======
+.form__textarea,
+.form__input {
+>>>>>>> Stashed changes
+    font-size: 13px;
+    line-height: 15px;
     padding: 10px 20px;
-    height: 40px;
+    height: 35px;
     display: flex;
     align-items: center;
     border: none;
@@ -16,26 +19,41 @@ input:focus {
     border-radius: 12px;
     color: $color_black;
     max-width: 100%;
+<<<<<<< Updated upstream
+    margin-bottom: 8px;
+
+    @media (min-width: 768px) {
+        font-size: 16px;
+        line-height: 20px;
+        height: 40px;
+        margin-bottom: 18px;
+    }
 
     &::placeholder {
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
-        line-height: 26px;
+=======
+    margin-bottom: 10px;
+
+    &::placeholder {
+>>>>>>> Stashed changes
+        font-size: 13px;
+        line-height: 15px;
         color: $color_lightGrey;
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 }
 
-textarea {
+.form__textarea {
     overflow: auto;
-    height: 130px;
+    height: 126px;
     width: 100%;
     resize: none;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
-    border: none;
+    margin-bottom: 10px;
 }
 
 .select {
@@ -49,16 +67,34 @@ textarea {
     box-shadow: -15px 4px 20px rgba(0, 0, 0, 0.12);
     border-radius: 25px;
     height: 40px;
-    padding: 10px 58px 10px 30px;
     position: relative;
+    padding: 10px 43px 10px 24px;
+    max-width: 100%;
+
+    @media (min-width: 1024px) {
+        padding: 10px 58px 10px 30px;
+    }
 
     &-text {
-
         span {
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
             line-height: 20px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: block;
+
+            @media (min-width: 1024px) {
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            @media (min-width: 1280px) {
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
     }
 
@@ -70,7 +106,11 @@ textarea {
         display: block;
         position: absolute;
         top: 15px;
-        right: 28px;
+        right: 22px;
+
+        @media (min-width: 1024px) {
+            right: 28px;
+        }
     }
 
     &-drop {
@@ -80,8 +120,9 @@ textarea {
         position: absolute;
         left: 0;
         top: 100%;
-        padding: 20px 58px 20px 30px;
+        padding: 20px;
         border-radius: 10px;
+        z-index: 10;
 
         li {
             margin-bottom: 10px;
