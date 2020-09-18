@@ -1210,6 +1210,10 @@
             line-height: 20px;
             color: $color_blue;
 
+            &:hover {
+                color: $color_darkBlue;
+            }
+
             @media (min-width: 1024px) {
                 margin-top: 20px;
             }
@@ -1863,6 +1867,8 @@
     @media (min-width: 1280px) {
         padding-bottom: 105px;
     }
+
+    @media (min-width: 1024px) {}
 
     &__heading {
         width: 90%;
