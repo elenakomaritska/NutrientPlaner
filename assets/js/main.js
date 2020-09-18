@@ -5,7 +5,6 @@ $(document).ready(function () {
     //Меню
 
     $('.menu-burger').on('click', function () {
-<<<<<<< Updated upstream
         $('.header__navigation').toggleClass('active').css('transition', '0.5s linear')
         $('.header__overlay').toggleClass('active')
     });
@@ -17,18 +16,6 @@ $(document).ready(function () {
 
     $('.header__overlay').on('click', function () {
         $('.header__navigation').removeClass('active')
-=======
-        $('.navigation__inner').toggleClass('active').css('transition', '0.5s linear')
-        $('.header__overlay').toggleClass('active')
-    });
-
-    $('.navigation__inner a').on('click', function () {
-        $('.navigation__inner').removeClass('active');
-    });
-
-    $('.header__overlay').on('click', function () {
-        $('.navigation__inner').removeClass('active')
->>>>>>> Stashed changes
         $(this).removeClass('active')
     });
 
