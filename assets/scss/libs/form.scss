@@ -15,6 +15,7 @@
     color: $color_black;
     max-width: 100%;
     margin-bottom: 8px;
+    -webkit-appearance: none;
 
     &:focus {
         background: #F2F2F2;
@@ -86,6 +87,7 @@
             text-overflow: ellipsis;
             overflow: hidden;
             display: block;
+            color: #0A0A0A;
 
             @media (min-width: 1024px) {
                 font-size: 14px;
