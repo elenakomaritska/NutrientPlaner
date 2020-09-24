@@ -191,6 +191,7 @@
 
     &__title {
         margin-top: 20px;
+        color: $color_greyDark;
 
         @media (min-width: 1024px) {
             margin-top: 43px;
@@ -201,6 +202,7 @@
         font-size: 13px;
         line-height: 15px;
         margin-top: 20px;
+        color: $color_lightGrey;
 
         @media (min-width: 1024px) {
             font-size: 16px;
@@ -322,19 +324,13 @@
                 margin-bottom: 12px;
             }
 
-            // @media (min-width: 1024px) {
-            //     font-style: normal;
-            //     font-weight: 500;
-            //     font-size: 24px;
-            //     line-height: 29px;
-            //     margin-bottom: 12px;
-            // }
         }
 
         &-description {
             font-size: 13px;
             line-height: 15px;
             max-width: 134px;
+            color: $color_grey;
 
             @media (min-width: 1024px) {
                 font-size: 16px;
@@ -533,6 +529,7 @@
             max-width: 80%;
             margin-bottom: 28px;
             display: block;
+            color: $color_grey;
 
             @media (min-width: 1024px) {
                 font-style: normal;
@@ -549,6 +546,7 @@
 
         &-description {
             max-width: 500px;
+            color: $color_grey;
 
             @media (min-width: 768px) {
                 display: block;
@@ -1902,12 +1900,6 @@
             text-align: center;
             font-style: normal;
             font-weight: 500;
-
-            // @media (min-width: 1024px) {
-            //     font-size: 24px;
-            //     line-height: 29px;
-            //     text-align: left;
-            // }
         }
 
         &-blockquote {
@@ -1917,6 +1909,7 @@
             font-weight: normal;
             font-size: 13px;
             line-height: 15px;
+            color: $color_grey;
 
             @media (min-width: 1024px) {
                 margin: 25px 0 0 45px;
@@ -2133,6 +2126,10 @@
                 line-height: 34px;
                 margin-bottom: 20px;
             }
+        }
+
+        &-description {
+            color: $color_grey;
         }
     }
 
