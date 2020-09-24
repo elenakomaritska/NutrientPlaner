@@ -30,6 +30,9 @@
   <!-- Основной контент -->
   <div class="wrapper">
 
+    <!-- Popup -->
+    <include src="assets/templates/popup.html"></include>
+
     <!-- Header -->
     <include src="assets/templates/header.html"></include>
 
@@ -198,7 +201,7 @@
               </li>
             </ul>
             <div class="opportunities__action">
-              <button class="button">Получить пробную версию</button>
+              <button class="button application">Получить пробную версию</button>
             </div>
             <div class="opportunities__dots"></div>
           </div>
@@ -276,9 +279,9 @@
             <select class="rates__show-sale"
               data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
               <option data-value='0' value="Без скидки">1 месяц</option>
-              <option data-value='15' value="Скидка 15%">12 месяцев</option>
-              <option data-value='10' value="Скидка 10%">6 месяцев</option>
               <option data-value='5' value="Скидка 5%">3 месяцев</option>
+              <option data-value='10' value="Скидка 10%">6 месяцев</option>
+              <option data-value='15' value="Скидка 15%">12 месяцев</option>
             </select>
             <span class="rates__select-sale">Без скидки</span>
           </div>
@@ -301,7 +304,10 @@
             <div class="rates__cards-item">
               <div class="rates__cards-heading">
                 <h3 class="rates__cards-title">Базовый</h3>
-                <span class="rates__cards-price"><span class="rates__price-value" id="cardBase">2990</span> Р/мес</span>
+                <span class="rates__cards-price">
+                  <span class="rates__price-value" id="cardBase">2990 </span> Р<span
+                    class="rates__cards-month">/мес</span>
+                </span>
                 <span class="rates__cards-saving">Экономия <span class='count' id="countBase">0</span> Р</span>
               </div>
               <div class="rates__cards-content">
@@ -329,8 +335,10 @@
               <div class="rates__cards-overflow--disable"></div>
               <div class="rates__cards-heading">
                 <h3 class="rates__cards-title">Профессиональный</h3>
-                <span class="rates__cards-price"><span class="rates__price-value"
-                    id="cardProfessional">3490</span>Р/мес</span>
+                <span class="rates__cards-price">
+                  <span class="rates__price-value" id="cardProfessional">3490</span> Р<span
+                    class="rates__cards-month">/мес</span>
+                </span>
                 <span class="rates__cards-saving">Экономия <span class='count' id="countProfessional">0</span>
                   Р</span>
               </div>

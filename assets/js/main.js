@@ -26,11 +26,10 @@ $(document).ready(function () {
     //Попапы
     jQuery(function (a) {
             a(document).mouseup(function (b) {
-                var c = a(".modall-body");
+                var c = a(".modall__inner");
                 c.is(b.target) || 0 !== c.has(b.target).length || (c.removeClass("active-modall"),
-                        a(".modall").removeClass("active-modall"),
-                        a(".body").removeClass("showing-modal")),
-                    $("#playerPopoup").attr('src', '')
+                    a(".modall").removeClass("active-modall"),
+                    a(".body").removeClass("showing-modal"))
             })
         }),
 
@@ -40,11 +39,12 @@ $(document).ready(function () {
             $("#playerPopoup").attr('src', '')
         });
 
-    // $('.link-video').on('click', function () {
-    //     $(".modall").removeClass('active-modall');
-    //     $(".modall-video").addClass('active-modall');
-    //     $('.body').addClass('showing-modal');
-    // });
+    $('.application').on('click', function () {
+        $(".modall").removeClass('active-modall');
+        $(".modall-application").addClass('active-modall');
+        $('.body').addClass('showing-modal');
+    });
+
 
     jQuery(".only_number").keypress(function (e) {
         if (e.which != 8 && e.which != 0 && e.which != 46 && (e.which < 48 || e.which > 57)) {

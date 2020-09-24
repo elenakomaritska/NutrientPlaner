@@ -1,78 +1,133 @@
-// .modall {
-//     z-index: 99999;
-//     width: 100vw;
-//     height: 100%;
-//     position: fixed;
-//     display: none;
-//     overflow-y: auto;
-//     max-height: 100vh;
-//     overflow-x: hidden;
-//     top: 0;
+.modall {
+    z-index: 99999;
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    display: none;
+    overflow-y: auto;
+    max-height: 100vh;
+    overflow-x: hidden;
+    top: 0;
+    background: rgba(252, 252, 252, .1);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 
-//     .modall-body {
-//         background-color: $color_white;
-//         transform: translate(-50%, -50%);
-//         left: 50%;
-//         top: 50%;
-//         margin: 0 auto;
-//         position: absolute;
-//         width: 100%;
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-//         padding: 0;
-//         border-radius: 6px;
-//         -webkit-border-radius: 6px;
-//         -moz-border-radius: 6px;
-//         -ms-border-radius: 6px;
-//         -o-border-radius: 6px;
-//     }
+    &__inner {
+        background-color: $color_silver;
+        box-shadow: -15px 4px 20px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        margin: 0 auto;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
 
-//     .close {
-//         top: -33px;
-//         right: 11px;
-//         width: 25px;
-//         height: 25px;
-//         cursor: pointer;
-//         position: absolute;
-//         z-index: 5;
+    .close {
+        top: -33px;
+        right: 11px;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        position: absolute;
+        z-index: 5;
 
-//         &::before,
-//         &::after {
-//             content: "";
-//             top: 6px;
-//             left: 0;
-//             width: 25px;
-//             height: 2px;
-//             position: absolute;
-//             background: $color_white;
-//         }
+        &::before,
+        &::after {
+            content: "";
+            top: 6px;
+            left: 0;
+            width: 25px;
+            height: 2px;
+            position: absolute;
+            background: $color_white;
+        }
 
-//         &::before {
-//             -webkit-transform: rotate(-45deg);
-//             -moz-transform: rotate(-45deg);
-//             -ms-transform: rotate(-45deg);
-//             -o-transform: rotate(-45deg);
-//             transform: rotate(-45deg);
-//         }
+        &::before {
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
 
-//         &::after {
-//             -webkit-transform: rotate(45deg);
-//             -moz-transform: rotate(45deg);
-//             -ms-transform: rotate(45deg);
-//             -o-transform: rotate(45deg);
-//             transform: rotate(45deg);
-//         }
+        &::after {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
 
-//     }
+    }
 
-// }
+    &__action {
+        margin-top: 20px;
+        text-align: center;
 
-// .modall.active-modall {
-//     display: block;
-// }
+        @media (min-width: 1280px) {
+            margin-top: 4px;
+            text-align: left;
+        }
+    }
 
-// .showing-modal {
-//     overflow: hidden;
-// }
+    &__button {
+        min-width: 115px;
+        height: 30px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+        @media (min-width: 768px) {
+            min-width: 140px;
+            height: 40px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    &__social {
+        text-align: center;
+
+        &-title {
+            font-size: 10px;
+            line-height: 15px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        &-icon {
+            width: 25px;
+            height: 25px;
+            fill: #7C7C7C;
+
+            @media (min-width: 1024px) {
+                width: 32px;
+                height: 32px;
+            }
+
+            &:hover {
+                fill: #626262;
+            }
+        }
+
+        &-link {
+            margin: 0 10px;
+            display: inline-flex;
+        }
+    }
+
+}
+
+.modall.active-modall {
+    display: block;
+}
+
+.showing-modal {
+    overflow: hidden;
+}
