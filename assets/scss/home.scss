@@ -2291,6 +2291,36 @@
             }
         }
 
+        #telegram-form {
+            &.active {
+                fill: #0088CC;
+            }
+
+            &:hover {
+                fill: #0088CC;
+            }
+        }
+
+        #viber-form {
+            &.active {
+                fill: #665CAC;
+            }
+
+            &:hover {
+                fill: #665CAC;
+            }
+        }
+
+        #whatsapp-form {
+            &.active {
+                fill: #25D366;
+            }
+
+            &:hover {
+                fill: #25D366;
+            }
+        }
+
         &-link {
             margin-right: 18px;
             display: inline-flex;

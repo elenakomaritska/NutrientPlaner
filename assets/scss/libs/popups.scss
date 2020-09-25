@@ -136,6 +136,36 @@
             }
         }
 
+        #telegram {
+            &.active {
+                fill: #0088CC;
+            }
+
+            &:hover {
+                fill: #0088CC;
+            }
+        }
+
+        #viber {
+            &.active {
+                fill: #665CAC;
+            }
+
+            &:hover {
+                fill: #665CAC;
+            }
+        }
+
+        #whatsapp {
+            &.active {
+                fill: #25D366;
+            }
+
+            &:hover {
+                fill: #25D366;
+            }
+        }
+
         &-link {
             margin: 0 10px;
             display: inline-flex;
