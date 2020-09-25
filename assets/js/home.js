@@ -40,24 +40,6 @@ $(document).ready(function () {
     // fade: true,
     cssEase: 'linear',
     appendDots: $(".opportunities__dots"),
-    asNavFor: $(".opportunities__carousel-image"),
-    responsive: [{
-      breakpoint: 1024,
-      settings: {
-        adaptiveHeight: false,
-      },
-    }, ]
-  })
-
-  $('.opportunities__carousel-image').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    // adaptiveHeight: true,
-    // fade: true,
-    cssEase: 'linear',
-    dots: false,
-    asNavFor: $(".opportunities__carousel"),
   })
 
 
@@ -74,7 +56,7 @@ $(document).ready(function () {
     cssEase: 'linear',
     adaptiveHeight: false,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3500,
     centerMode: true,
     draggable: false,
     swipe: false,

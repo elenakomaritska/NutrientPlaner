@@ -386,7 +386,7 @@
     }
 
     @media (min-width: 768px) {
-        padding-bottom: 130px;
+        padding-bottom: 80px;
     }
 
     @media (min-width: 1024px) {
@@ -397,6 +397,7 @@
 
     @media (min-width: 1600px) {
         padding-top: 180px;
+        padding-bottom: 140px;
     }
 
     &__inner {
@@ -417,7 +418,7 @@
         text-align: left;
         display: block;
         width: 100%;
-        margin-bottom: 22px;
+        margin-bottom: 10px;
         line-height: normal;
         font-style: normal;
         font-weight: 600;
@@ -442,84 +443,60 @@
         }
     }
 
-    &__wrapper-carousel {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        position: relative;
+    &__wrapper-image {
+        order: 2;
 
         @media (min-width: 768px) {
-            justify-content: flex-end;
+            width: 50%;
+        }
+
+        @media (min-width: 1600px) {
+            width: 55%;
+        }
+
+    }
+
+    &__carousel {
+        order: 2;
+        width: 100%;
+
+        @media (min-width: 1024px) {
+            margin-top: -50px;
         }
     }
 
-    &__carousel,
-    &__carousel-image {
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        order: 1;
-        padding-bottom: 48px;
+    &__item {
+        display: flex !important;
+        flex-direction: column;
 
         @media (min-width: 768px) {
-            min-height: 175px;
-            width: 51%;
-            padding-bottom: 0;
-            order: 1;
+            flex-direction: row-reverse;
+        }
+    }
 
-            &::after {
-                display: none;
-            }
+
+    &__content {
+        display: flex !important;
+        flex-wrap: wrap;
+        cursor: pointer;
+        flex-direction: column;
+
+        @media (min-width: 768px) {
+            width: 51%;
+            padding-bottom: 60px;
+        }
+
+        @media (min-width: 1024px) {
+            padding-top: 50px;
         }
 
         @media (min-width: 1280px) {
             width: 45%;
         }
-    }
-
-    &__carousel {
-        @media (min-width: 768px) {
-            padding-bottom: 70px;
-        }
-
-        @media (min-width: 1024px) {
-            padding-bottom: 160px;
-        }
 
         @media (min-width: 1600px) {
-            padding-bottom: 260px;
             width: 40%;
         }
-    }
-
-    &__carousel-image {
-        order: 3;
-        width: 100%;
-        padding-bottom: 20px;
-
-        @media (min-width: 768px) {
-            order: 1;
-            width: 49%;
-            padding-bottom: 0;
-        }
-
-        @media (min-width: 1280px) {
-            width: 55%;
-            margin-top: -100px;
-        }
-
-        @media (min-width: 1600px) {
-            width: 60%;
-            margin-top: -180px;
-        }
-    }
-
-
-    &__item {
-        display: flex !important;
-        flex-wrap: wrap;
-        flex-direction: column;
-        cursor: pointer;
 
         &-subtitle {
             font-weight: 500;
@@ -529,7 +506,6 @@
             max-width: 80%;
             margin-bottom: 28px;
             display: block;
-            color: $color_grey;
 
             @media (min-width: 1024px) {
                 font-style: normal;
@@ -546,7 +522,7 @@
 
         &-description {
             max-width: 500px;
-            color: $color_grey;
+            margin-bottom: 20px;
 
             @media (min-width: 768px) {
                 display: block;
@@ -568,21 +544,22 @@
         margin-bottom: 36px;
         position: relative;
         text-align: center;
-        order: 5;
+        order: 3;
 
         @media (min-width: 768px) {
             width: 51%;
             text-align: left;
             order: 4;
-            margin-top: -50px;
         }
 
         @media (min-width: 1024px) {
-            margin-top: -145px;
+            margin-top: -60px;
+            order: 3;
         }
 
         @media (min-width: 1280px) {
             width: 45%;
+            margin-top: -145px;
         }
 
         @media (min-width: 1600px) {
@@ -596,18 +573,17 @@
     &__dots {
         z-index: 1;
         width: 100%;
-        order: 2;
+        order: 1;
+        margin-bottom: 20px;
 
         @media (min-width: 768px) {
             width: 51%;
             padding: 0;
-            order: 4;
-            margin-top: -20px;
+            order: 3;
+            margin-top: -50px;
         }
 
         @media (min-width: 1024px) {
-            bottom: 40px;
-            position: absolute;
             margin-top: 0;
         }
 
@@ -616,7 +592,6 @@
         }
 
         @media (min-width: 1600px) {
-            bottom: 145px;
             width: 40%;
         }
 
@@ -691,8 +666,8 @@
         background-size: contain;
 
         @media (min-width: 768px) {
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
         }
     }
 }
@@ -1910,7 +1885,6 @@
             font-weight: normal;
             font-size: 13px;
             line-height: 15px;
-            color: $color_grey;
 
             @media (min-width: 1024px) {
                 margin: 25px 0 0 45px;
@@ -2129,9 +2103,6 @@
             }
         }
 
-        &-description {
-            color: $color_grey;
-        }
     }
 
     &__button {
@@ -2209,6 +2180,27 @@
         }
     }
 
+    &__radio {
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: 5px;
+    }
+
+    &__label {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    &__link {
+        font-size: 13px;
+        line-height: 15px;
+        text-decoration: underline;
+
+        &:hover {
+            color: $color_green;
+        }
+    }
+
     &__action {
         margin-top: 32px;
         text-align: center;
@@ -2242,6 +2234,8 @@
     }
 
     &__social {
+        margin: 0 0 10px 5px;
+
         @media (min-width: 1024px) {
             display: flex;
             flex-direction: row-reverse;
@@ -2273,6 +2267,10 @@
             @media (min-width: 1024px) {
                 width: 32px;
                 height: 32px;
+            }
+
+            &.active {
+                fill: #626262;
             }
 
             &:hover {

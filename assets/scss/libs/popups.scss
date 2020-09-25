@@ -66,6 +66,27 @@
 
     }
 
+    &__radio {
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: 5px;
+    }
+
+    &__label {
+        font-size: 9px;
+        line-height: 13px;
+    }
+
+    &__link {
+        font-size: 9px;
+        line-height: 13px;
+        text-decoration: underline;
+
+        &:hover {
+            color: $color_green;
+        }
+    }
+
     &__action {
         margin-top: 20px;
         text-align: center;
@@ -106,6 +127,10 @@
                 height: 32px;
             }
 
+            &.active {
+                fill: #626262;
+            }
+
             &:hover {
                 fill: #626262;
             }
@@ -116,7 +141,12 @@
             display: inline-flex;
         }
     }
+}
 
+.modall-application {
+    .modall__inner {
+        max-width: 300px;
+    }
 }
 
 .modall.active-modall {

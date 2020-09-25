@@ -45,6 +45,16 @@ $(document).ready(function () {
         $('.body').addClass('showing-modal');
     });
 
+    $('.contact-us__social-link').on('click', function () {
+        $('.contact-us__social-link').children('.contact-us__social-icon').removeClass('active')
+        $(this).children('.contact-us__social-icon').toggleClass('active')
+    })
+
+    $('.modall__social-link').on('click', function () {
+        $('.modall__social-link').children('.modall__social-icon').removeClass('active')
+        $(this).children('.modall__social-icon').toggleClass('active')
+    })
+
 
     jQuery(".only_number").keypress(function (e) {
         if (e.which != 8 && e.which != 0 && e.which != 46 && (e.which < 48 || e.which > 57)) {
