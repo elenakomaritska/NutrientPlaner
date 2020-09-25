@@ -159,3 +159,8 @@ span.jcf-radio {
         }
     }
 }
+
+::-webkit-validation-bubble {
+    display: flex;
+    align-items: center;
+}
