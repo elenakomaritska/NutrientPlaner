@@ -160,69 +160,6 @@ $(document).ready(function () {
     var resultOption = $(this).val()
     $(this).parents('.rates__select').find('.rates__select-sale').text(resultOption)
 
-    if ($(this).val() == 'Без скидки') {
-      var saleValue = 0
-      $('.rates__cards-saving').css('opacity', '0')
-      $('.rates__cards-month').css('opacity', '1')
-      valueDiscount = $('#selectBase').val()
-      $('#cardBase').text(parseInt(valueDiscount))
-    }
-
-    if ($('.rates__show-sale').val() == 'Скидка 5%') {
-      $('.rates__cards-saving').css('opacity', '1')
-      $('.rates__cards-month').css('opacity', '0')
-
-      var valueNotDiscount = valuePrice * countMonthThree
-      var valueDiscount = valuePrice * countMonthThree * saleValueFive
-      var totalPrice = valueNotDiscount - valueDiscount
-
-      $('#countBase').text(parseInt(totalPrice))
-      $('#cardBase').text(parseInt(valueDiscount))
-
-      var valueNotDiscount2 = valuePriceProfessional * countMonthThree
-      var valueDiscount2 = valuePriceProfessional * countMonthThree * saleValueFive
-      var totalPrice2 = valueNotDiscount2 - valueDiscount2
-
-      $('#countProfessional').text(parseInt(totalPrice2))
-      $('#cardProfessional').text(parseInt(valueDiscount2))
-    }
-
-    if ($('.rates__show-sale').val() == 'Скидка 10%') {
-      $('.rates__cards-saving').css('opacity', '1')
-      $('.rates__cards-month').css('opacity', '0')
-
-      var valueNotDiscount = valuePrice * countMonthSix
-      var valueDiscount = valuePrice * countMonthSix * saleValueTen
-      var totalPrice = valueNotDiscount - valueDiscount
-
-      $('#countBase').text(parseInt(totalPrice))
-      $('#cardBase').text(parseInt(valueDiscount))
-
-      var valueNotDiscount2 = valuePriceProfessional * countMonthSix
-      var valueDiscount2 = valuePriceProfessional * countMonthSix * saleValueTen
-      var totalPrice2 = valueNotDiscount2 - valueDiscount2
-      $('#countProfessional').text(parseInt(totalPrice2))
-      $('#cardProfessional').text(parseInt(valueDiscount2))
-    }
-
-    if ($('.rates__show-sale').val() == 'Скидка 15%') {
-      $('.rates__cards-saving').css('opacity', '1')
-      $('.rates__cards-month').css('opacity', '0')
-
-      var valueNotDiscount = valuePrice * countMonthTwelve
-      var valueDiscount = valuePrice * countMonthTwelve * saleValueFifteen
-      var totalPrice = valueNotDiscount - valueDiscount
-
-      $('#countBase').text(parseInt(totalPrice))
-      $('#cardBase').text(parseInt(valueDiscount))
-
-      var valueNotDiscount2 = valuePriceProfessional * countMonthTwelve
-      var valueDiscount2 = valuePriceProfessional * countMonthTwelve * saleValueFifteen
-      var totalPrice2 = valueNotDiscount2 - valueDiscount2
-      $('#countProfessional').text(parseInt(totalPrice2))
-      $('#cardProfessional').text(parseInt(valueDiscount2))
-    }
-
     //Выбор рациона
     $("#selectBase").on("change", function () {
       var resultOption = $(this).val()
@@ -233,8 +170,9 @@ $(document).ready(function () {
         var valueDiscount = resultOption * countMonthThree * saleValueFive
         var totalPrice = valueNotDiscount - valueDiscount
 
-        $('.rates__cards-saving #countBase').text(parseInt(totalPrice))
+        $('.rates__cards-saving').css('opacity', '1')
         $('#cardBase').text(parseInt(valueDiscount))
+        $('.rates__cards-saving #countBase').text(parseInt(totalPrice))
       }
 
       if ($('.rates__show-sale').val() == 'Скидка 10%') {
@@ -242,8 +180,9 @@ $(document).ready(function () {
         var valueDiscount = resultOption * countMonthSix * saleValueTen
         var totalPrice = valueNotDiscount - valueDiscount
 
-        $('.rates__cards-saving #countBase').text(parseInt(totalPrice))
+        $('.rates__cards-saving').css('opacity', '1')
         $('#cardBase').text(parseInt(valueDiscount))
+        $('.rates__cards-saving #countBase').text(parseInt(totalPrice))
       }
 
       if ($('.rates__show-sale').val() == 'Скидка 15%') {
@@ -251,8 +190,9 @@ $(document).ready(function () {
         var valueDiscount = resultOption * countMonthTwelve * saleValueFifteen
         var totalPrice = valueNotDiscount - valueDiscount
 
-        $('.rates__cards-saving #countBase').text(parseInt(totalPrice))
+        $('.rates__cards-saving').css('opacity', '1')
         $('#cardBase').text(parseInt(valueDiscount))
+        $('.rates__cards-saving #countBase').text(parseInt(totalPrice))
       }
     })
 
@@ -265,6 +205,7 @@ $(document).ready(function () {
         var valueDiscount = resultOption * countMonthThree * saleValueFive
         var totalPrice = valueNotDiscount - valueDiscount
 
+        $('.rates__cards-saving').css('opacity', '1')
         $('.rates__cards-saving #countProfessional').text(parseInt(totalPrice))
         $('#cardProfessional').text(parseInt(valueDiscount))
       }
@@ -274,6 +215,7 @@ $(document).ready(function () {
         var valueDiscount = resultOption * countMonthSix * saleValueTen
         var totalPrice = valueNotDiscount - valueDiscount
 
+        $('.rates__cards-saving').css('opacity', '1')
         $('.rates__cards-saving #countProfessional').text(parseInt(totalPrice))
         $('#cardProfessional').text(parseInt(valueDiscount))
       }
@@ -283,83 +225,82 @@ $(document).ready(function () {
         var valueDiscount = resultOption * countMonthTwelve * saleValueFifteen
         var totalPrice = valueNotDiscount - valueDiscount
 
+        $('.rates__cards-saving').css('opacity', '1')
         $('.rates__cards-saving #countProfessional').text(parseInt(totalPrice))
         $('#cardProfessional').text(parseInt(valueDiscount))
       }
 
     })
 
-    // $("#selectBase").on("change", function () {
-    //   var resultOption = $(this).val()
-    //   $(this).parents('.rates__cards-item').find('.rates__price-value').text(resultOption)
 
-    //   if ($('.rates__show-sale').val() == 'Скидка 5%') {
-    //     var valueNotDiscount = resultOption * countMonthThree
-    //     var valueDiscount = resultOption * countMonthThree * saleValueFive
-    //     var totalPrice = valueNotDiscount - valueDiscount
+    if ($(this).val() == 'Без скидки') {
+      var saleValue = 0
+      $('.rates__cards-saving').css('opacity', '0')
+      $('.rates__cards-month').css('opacity', '1')
+      valueDiscount = $('#selectBase').val()
+      $('#cardBase').text(parseInt(valueDiscount))
+    }
 
-    //     $('.rates__cards-saving').css('opacity', '1')
-    //     $('#cardBase').text(parseInt(valueDiscount))
-    //     $('.rates__cards-saving #countBase').text(parseInt(totalPrice))
-    //   }
+    if ($('.rates__show-sale').val() == 'Скидка 5%') {
+      $('.rates__cards-saving').css('opacity', '1')
+      $('.rates__cards-month').css('opacity', '0')
+      var valuePrice = $('.rates__show-price').val()
+      var valueNotDiscount = valuePrice * countMonthThree
+      var valueDiscount = valuePrice * countMonthThree * saleValueFive
+      var totalPrice = valueNotDiscount - valueDiscount
 
-    //   if ($('.rates__show-sale').val() == 'Скидка 10%') {
-    //     var valueNotDiscount = resultOption * countMonthSix
-    //     var valueDiscount = resultOption * countMonthSix * saleValueTen
-    //     var totalPrice = valueNotDiscount - valueDiscount
+      $('#countBase').text(parseInt(totalPrice))
+      $('#cardBase').text(parseInt(valueDiscount))
+      var valuePriceProfessional = $('#professional .rates__show-price').val()
+      var valueNotDiscount2 = valuePriceProfessional * countMonthThree
+      var valueDiscount2 = valuePriceProfessional * countMonthThree * saleValueFive
+      var totalPrice2 = valueNotDiscount2 - valueDiscount2
 
-    //     $('.rates__cards-saving').css('opacity', '1')
-    //     $('#cardBase').text(parseInt(valueDiscount))
-    //     $('.rates__cards-saving #countBase').text(parseInt(totalPrice))
-    //   }
+      $('#countProfessional').text(parseInt(totalPrice2))
+      $('#cardProfessional').text(parseInt(valueDiscount2))
+    }
 
-    //   if ($('.rates__show-sale').val() == 'Скидка 15%') {
-    //     var valueNotDiscount = resultOption * countMonthTwelve
-    //     var valueDiscount = resultOption * countMonthTwelve * saleValueFifteen
-    //     var totalPrice = valueNotDiscount - valueDiscount
+    if ($('.rates__show-sale').val() == 'Скидка 10%') {
+      $('.rates__cards-saving').css('opacity', '1')
+      $('.rates__cards-month').css('opacity', '0')
+      var valuePrice = $('.rates__show-price').val()
+      var valueNotDiscount = valuePrice * countMonthSix
+      var valueDiscount = valuePrice * countMonthSix * saleValueTen
+      var totalPrice = valueNotDiscount - valueDiscount
 
-    //     $('.rates__cards-saving').css('opacity', '1')
-    //     $('#cardBase').text(parseInt(valueDiscount))
-    //     $('.rates__cards-saving #countBase').text(parseInt(totalPrice))
-    //   }
-    // })
+      $('#countBase').text(parseInt(totalPrice))
+      $('#cardBase').text(parseInt(valueDiscount))
 
-    // $("#selectProfessional").on("change", function () {
-    //   var resultOption = $(this).val()
-    //   $(this).parents('.rates__cards-item').find('.rates__price-value').text(resultOption)
+      var valuePriceProfessional = $('#professional .rates__show-price').val()
+      var valueNotDiscount2 = valuePriceProfessional * countMonthSix
+      var valueDiscount2 = valuePriceProfessional * countMonthSix * saleValueTen
+      var totalPrice2 = valueNotDiscount2 - valueDiscount2
+      $('#countProfessional').text(parseInt(totalPrice2))
+      $('#cardProfessional').text(parseInt(valueDiscount2))
+    }
 
-    //   if ($('.rates__show-sale').val() == 'Скидка 5%') {
-    //     var valueNotDiscount = resultOption * countMonthThree
-    //     var valueDiscount = resultOption * countMonthThree * saleValueFive
-    //     var totalPrice = valueNotDiscount - valueDiscount
+    if ($('.rates__show-sale').val() == 'Скидка 15%') {
+      $('.rates__cards-saving').css('opacity', '1')
+      $('.rates__cards-month').css('opacity', '0')
+      var valuePrice = $('.rates__show-price').val()
+      var valueNotDiscount = valuePrice * countMonthTwelve
+      var valueDiscount = valuePrice * countMonthTwelve * saleValueFifteen
+      var totalPrice = valueNotDiscount - valueDiscount
 
-    //     $('.rates__cards-saving').css('opacity', '1')
-    //     $('.rates__cards-saving #countProfessional').text(parseInt(totalPrice))
-    //     $('#cardProfessional').text(parseInt(valueDiscount))
-    //   }
+      $('#countBase').text(parseInt(totalPrice))
+      $('#cardBase').text(parseInt(valueDiscount))
 
-    //   if ($('.rates__show-sale').val() == 'Скидка 10%') {
-    //     var valueNotDiscount = resultOption * countMonthSix
-    //     var valueDiscount = resultOption * countMonthSix * saleValueTen
-    //     var totalPrice = valueNotDiscount - valueDiscount
+      var valuePriceProfessional = $('#professional .rates__show-price').val()
+      var valueNotDiscount2 = valuePriceProfessional * countMonthTwelve
+      var valueDiscount2 = valuePriceProfessional * countMonthTwelve * saleValueFifteen
+      var totalPrice2 = valueNotDiscount2 - valueDiscount2
+      $('#countProfessional').text(parseInt(totalPrice2))
+      $('#cardProfessional').text(parseInt(valueDiscount2))
+    }
 
-    //     $('.rates__cards-saving').css('opacity', '1')
-    //     $('.rates__cards-saving #countProfessional').text(parseInt(totalPrice))
-    //     $('#cardProfessional').text(parseInt(valueDiscount))
-    //   }
-
-    //   if ($('.rates__show-sale').val() == 'Скидка 15%') {
-    //     var valueNotDiscount = resultOption * countMonthTwelve
-    //     var valueDiscount = resultOption * countMonthTwelve * saleValueFifteen
-    //     var totalPrice = valueNotDiscount - valueDiscount
-
-    //     $('.rates__cards-saving').css('opacity', '1')
-    //     $('.rates__cards-saving #countProfessional').text(parseInt(totalPrice))
-    //     $('#cardProfessional').text(parseInt(valueDiscount))
-    //   }
-
-    // })
   })
+
+
 
   $("#selectBase").on("change", function () {
     var resultOption = $(this).val()
@@ -391,39 +332,6 @@ $(document).ready(function () {
       $('.rates__cards-saving #countBase').text(parseInt(totalPrice))
       $('#cardBase').text(parseInt(valueDiscount))
     }
-  })
-
-  $("#selectProfessional").on("change", function () {
-    var resultOption = $(this).val()
-    $(this).parents('.rates__cards-item').find('.rates__price-value').text(resultOption)
-
-    if ($('.rates__show-sale').val() == 'Скидка 5%') {
-      var valueNotDiscount = resultOption * countMonthThree
-      var valueDiscount = resultOption * countMonthThree * saleValueFive
-      var totalPrice = valueNotDiscount - valueDiscount
-
-      $('.rates__cards-saving #countProfessional').text(parseInt(totalPrice))
-      $('#cardProfessional').text(parseInt(valueDiscount))
-    }
-
-    if ($('.rates__show-sale').val() == 'Скидка 10%') {
-      var valueNotDiscount = resultOption * countMonthSix
-      var valueDiscount = resultOption * countMonthSix * saleValueTen
-      var totalPrice = valueNotDiscount - valueDiscount
-
-      $('.rates__cards-saving #countProfessional').text(parseInt(totalPrice))
-      $('#cardProfessional').text(parseInt(valueDiscount))
-    }
-
-    if ($('.rates__show-sale').val() == 'Скидка 15%') {
-      var valueNotDiscount = resultOption * countMonthTwelve
-      var valueDiscount = resultOption * countMonthTwelve * saleValueFifteen
-      var totalPrice = valueNotDiscount - valueDiscount
-
-      $('.rates__cards-saving #countProfessional').text(parseInt(totalPrice))
-      $('#cardProfessional').text(parseInt(valueDiscount))
-    }
-
   })
 
   $('.rates__action-button').on('click', function () {
