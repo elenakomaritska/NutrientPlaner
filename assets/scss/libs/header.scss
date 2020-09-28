@@ -6,6 +6,59 @@
     height: 80px;
     padding: 0 20px;
     background-color: inherit;
+    box-shadow: none;
+    transition: all .3s ease;
+    transform: translateY(0%);
+    -webkit-transition: all 0s linear;
+    -moz-transition: all 0s linear;
+    -ms-transition: all 0s linear;
+    -o-transition: all 0s linear;
+
+    &.active {
+        top: 0;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+        transition: all .5s ease-in;
+        -webkit-transition: all .5s ease-in;
+        -moz-transition: all .5s ease-in;
+        -ms-transition: all .5s ease-in;
+        -o-transition: all .5s ease-in;
+        box-shadow: -15px 4px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    &.out {
+        transform: translateY(-100%);
+        transition: transform .5s linear;
+        -webkit-transition: transform .5s linear;
+        -moz-transition: transform .5s linear;
+        -ms-transition: transform .5s linear;
+        -o-transition: transform .5s linear;
+    }
+
+    &.topAbsolute {
+        top: 0;
+        box-shadow: none;
+        height: 80px;
+        position: absolute;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+        transform: translateY(0%);
+        -webkit-transition: all 0s linear;
+        -moz-transition: all 0s linear;
+        -ms-transition: all 0s linear;
+        -o-transition: all 0s linear;
+
+        @media (min-width: 1024px) {
+            position: relative !important;
+        }
+    }
+
 
     @media (min-width: 1024px) {
         padding: 0 15px;
@@ -103,7 +156,7 @@
         height: 80px;
         display: flex;
         justify-content: space-between;
-        padding-top: 20px;
+        padding-top: 10px;
 
         @media (min-width: 1024px) {
             padding-top: 0;

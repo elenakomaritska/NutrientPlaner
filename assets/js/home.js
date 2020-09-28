@@ -16,6 +16,20 @@ $(window).resize(function () {
   }
 })
 
+var sectionHeight = $('.advantages').height()
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() >= sectionHeight) {
+    $('header').css('background-color', '#fff').removeClass('out').removeClass('topAbsolute')
+      .css('position', 'fixed').addClass('active')
+  } else if ($(window).scrollTop() >= 400) {
+    $('header').addClass('out')
+  } else {
+    $('header').css('background-color', 'inherit').css('position', 'absolute').addClass('topAbsolute')
+
+  }
+});
+
 $(document).ready(function () {
 
   // кнопка ютуб
