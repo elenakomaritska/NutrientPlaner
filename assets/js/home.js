@@ -155,7 +155,6 @@ $(document).ready(function () {
     selector: 'select.classname',
   })
 
-
   //rates
 
   var countMonthThree = 3
@@ -313,8 +312,6 @@ $(document).ready(function () {
     }
 
   })
-
-
 
   $("#selectBase").on("change", function () {
     var resultOption = $(this).val()

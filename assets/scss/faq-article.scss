@@ -1,0 +1,237 @@
+@import "libs/variables";
+@import "libs/container-mixins";
+@import "slick.min.css";
+
+.header {
+    background-image: none;
+
+    @media (min-width: 1024px) {
+        box-shadow: -15px 4px 20px rgba(0, 0, 0, 0.12);
+
+        &__action {
+            z-index: 1;
+            width: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__logo {
+            padding: 0 0 10px;
+        }
+    }
+
+    @media (min-width: 1680px) {
+        &__action {
+            z-index: 1;
+            width: 51%;
+        }
+    }
+
+    @media (min-width: 1920px) {
+        &__action {
+            width: 53%;
+        }
+    }
+}
+
+.faq {
+    padding: 100px 0 20px;
+
+    @media (min-width: 768px) {
+        padding: 60px 0 60px;
+    }
+
+    &__inner {
+        @include container;
+    }
+
+    &__title {
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    &__button-back {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 50px;
+        display: inline-block;
+        color: $color_darkBlue;
+        max-width: 254px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            background-image: url(../img/arrow-more.svg);
+            width: 15px;
+            height: 15px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            top: 13px;
+            left: 0px;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 25px;
+
+        &-title {
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 31px;
+
+            @media (min-width: 768px) {
+                font-size: 30px;
+                font-weight: 500;
+                font-style: normal;
+                line-height: 35px;
+            }
+        }
+
+        &-subtitle {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    &__card {
+        box-shadow: -6px 3px 12px rgba(0, 0, 0, 0.12);
+        border-radius: 30px;
+        padding: 26px 18px;
+        margin-bottom: 30px;
+        width: 274px;
+
+        @media (min-width: 768px) {
+            width: 480px;
+        }
+
+        &-title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 5px;
+            color: $color_TankGrey;
+        }
+
+        &-subtitle {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 20px;
+            display: block;
+            color: $color_grey;
+        }
+
+        &-description {
+            color: $color_grey;
+        }
+    }
+
+    &__article {
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-content {
+            margin-bottom: 30px;
+
+            @media (min-width: 768px) {
+                order: 1;
+            }
+        }
+
+        &-text {
+            display: block;
+            margin-bottom: 10px;
+            max-width: 1005px;
+            color: $color_grey;
+        }
+
+        &-images {
+            display: flex;
+            margin-top: 14px;
+            justify-content: space-between;
+
+            @media (min-width: 768px) {
+                order: 4;
+            }
+        }
+
+        &-image {
+            &.size--large {
+                width: 100%;
+
+                @media (min-width: 768px) {
+                    order: 2;
+                }
+            }
+
+            &.size--medium {
+                width: 47%;
+            }
+        }
+
+        &-quote {
+            font-style: italic;
+            font-size: 13px;
+            line-height: 15px;
+            margin: 30px auto;
+            max-width: 274px;
+            color: $color_grey;
+
+            @media (min-width: 480px) {
+                max-width: 720px;
+            }
+
+            @media (min-width: 768px) {
+                order: 3;
+            }
+        }
+
+        &-desc {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 13px;
+            line-height: 15px;
+            color: $color_grey;
+        }
+    }
+
+    &__list {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+    }
+
+    &__item {
+        width: 47%;
+        display: flex;
+        flex-direction: column;
+
+        &-images {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        &-image {
+            width: 47%;
+        }
+
+        &-text {
+            max-width: 595px;
+        }
+    }
+}

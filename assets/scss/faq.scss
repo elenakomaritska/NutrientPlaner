@@ -1,0 +1,222 @@
+@import "libs/variables";
+@import "libs/container-mixins";
+@import "slick.min.css";
+
+.header {
+    background-image: none;
+
+    @media (min-width: 1024px) {
+        box-shadow: -15px 4px 20px rgba(0, 0, 0, 0.12);
+
+        &__action {
+            z-index: 1;
+            width: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__logo {
+            padding: 0 0 10px;
+        }
+    }
+
+    @media (min-width: 1680px) {
+        &__action {
+            z-index: 1;
+            width: 51%;
+        }
+    }
+
+    @media (min-width: 1920px) {
+        &__action {
+            width: 53%;
+        }
+    }
+}
+
+.faq {
+    padding: 100px 0 20px;
+
+    @media (min-width: 1024px) {
+        padding: 100px 0 60px;
+    }
+
+    &__title {
+        display: block;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 31px;
+        width: 90%;
+        max-width: 1623px;
+        margin: 0 auto 15px;
+
+        @media (min-width: 768px) {
+            font-size: 35px;
+            font-weight: 500;
+            line-height: 40px;
+        }
+    }
+
+    &__heading {
+        width: 90%;
+        max-width: 1623px;
+        margin: 0 auto;
+        padding-top: 60px;
+
+        &-title {
+            display: block;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 31px;
+            margin-bottom: 10px;
+
+            @media (min-width: 768px) {
+                font-size: 35px;
+                font-weight: 500;
+                line-height: 40px;
+            }
+        }
+
+        &-link {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            color: $color_darkBlue;
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__carousel {
+
+        @media (min-width: 1024px) {
+            padding-left: 30px;
+
+            .slick-track {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        @media (min-width: 1920px) {
+            padding-left: 120px;
+            padding-right: 230px;
+        }
+    }
+
+    &__item {
+        padding: 5px 5px 20px 20px;
+        margin: 0 auto;
+        display: flex !important;
+        justify-content: center;
+
+        @media (min-width: 1280px) {
+            padding: 30px 10px 30px 30px;
+            margin: 0;
+            justify-content: flex-start;
+        }
+
+        &-inner {
+            box-shadow: -6px 5px 7px rgba(0, 0, 0, 0.12);
+            border-radius: 30px;
+            padding: 20px 15px;
+            width: 274px;
+
+            @media (min-width: 1280px) {
+                width: 480px;
+                padding: 42px 30px 30px;
+            }
+        }
+
+        &-title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 8px;
+
+            @media (min-width: 1280px) {
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 26px;
+            }
+        }
+
+        &-subtitle {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            display: block;
+            margin-bottom: 12px;
+            color: $color_grey;
+
+            @media (min-width: 1280px) {
+                font-weight: 500;
+            }
+        }
+
+        &-description {
+            color: $color_grey;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 15px;
+            display: block;
+            margin-bottom: 21px;
+        }
+
+        &-link {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            color: $color_darkBlue;
+        }
+
+    }
+
+    &__questions-inner {
+        position: relative;
+    }
+
+    &__action {
+        width: 90%;
+        max-width: 1623px;
+        margin: 0 auto;
+
+        @media (min-width: 1920px) {
+            width: 114px;
+            max-width: none;
+            margin: 0 auto;
+            position: absolute;
+            right: 5%;
+            top: 65%;
+        }
+    }
+
+    &__button-more {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        position: relative;
+        padding-right: 20px;
+        margin-bottom: 20px;
+        display: inline-block;
+        color: $color_darkBlue;
+
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url(../img/arrow-more.svg);
+            width: 15px;
+            height: 15px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            top: 5px;
+            right: 0px;
+
+            @media (min-width: 1920px) {
+                top: 11px;
+            }
+        }
+    }
+}
