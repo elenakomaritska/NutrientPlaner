@@ -159,6 +159,8 @@
             display: flex;
             margin-top: 14px;
             justify-content: space-between;
+            align-items: flex-start;
+            height: fit-content;
 
             @media (min-width: 768px) {
                 order: 4;
@@ -212,6 +214,8 @@
         @media (min-width: 768px) {
             display: flex;
             justify-content: space-between;
+            align-items: flex-start;
+
             margin-top: 50px;
         }
     }
@@ -225,6 +229,8 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
+            align-items: flex-start;
+            height: fit-content;
         }
 
         &-image {
