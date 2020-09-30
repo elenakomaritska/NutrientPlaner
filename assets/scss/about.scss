@@ -4,236 +4,264 @@
 @import "slick.min.css";
 
 .header {
-    background-image: none;
+  background-image: none;
 
-    @media (min-width: 1024px) {
-        &__action {
-            z-index: 1;
-            width: 45%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+  @media (min-width: 1024px) {
+    height: 60px;
 
-        &__logo {
-            padding: 0 0 10px;
-        }
+    &__inner {
+      height: 60px;
     }
 
-    @media (min-width: 1680px) {
-        &__action {
-            z-index: 1;
-            width: 51%;
-        }
+    &__action {
+      z-index: 1;
+      width: 45%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    @media (min-width: 1920px) {
-        &__action {
-            width: 53%;
-        }
+    &__logo {
+      padding: 8px 0 10px;
+      height: 100%;
     }
+
+    &__button {
+      font-size: 15px;
+      min-width: 83px;
+      height: 36px;
+      min-height: 36px;
+    }
+  }
+
+  @media (min-width: 1680px) {
+    &__action {
+      z-index: 1;
+      width: 51%;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    &__action {
+      width: 53%;
+    }
+  }
 }
 
 .about-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 820px;
+  height: 100vh;
+  padding: 80px 0 0;
+  background-position: 53% 50%;
+  background-size: cover;
+
+  @media (min-width: 480px) {
+    background-position: 50% 50%;
+  }
+
+  @media (min-width: 1024px) {
+    height: calc(100vh - 80px);
+    min-height: 640px;
+  }
+
+  @media (min-width: 1400px) {
+    min-height: 640px;
+    padding: 60px 0 0;
+    justify-content: space-around;
+  }
+
+  @media (min-width: 1680px) {
+    min-height: 1000px;
+    padding: 200px 0 0;
+  }
+
+  .mCSB_scrollTools {
+    .mCSB_draggerContainer {
+      height: 100%;
+      width: 9px;
+      box-shadow: none;
+      border-radius: 5px;
+      background-color: inherit;
+    }
+
+    .mCSB_draggerRail {
+      width: 5px;
+      height: 100%;
+      background-color: inherit !important;
+    }
+
+    .mCSB_dragger .mCSB_dragger_bar {
+      background-color: inherit !important;
+    }
+
+    .mCSB_dragger {
+      right: 0;
+      min-height: 51px !important;
+      background-color: #ffffff !important;
+      opacity: 0.6;
+      box-shadow: -15px 4px 20px rgba(0, 0, 0, 0.12);
+      border-radius: 20px;
+      width: 8px;
+      height: 51px !important;
+    }
+  }
+
+  &__inner {
+    @include container;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 820px;
-    height: 100vh;
-    padding: 80px 0 0;
-    background-position: 51% 50%;
-    background-size: cover;
-    background-image: url(../img/bg-about.jpg);
+  }
+
+  &__content {
+    width: 81%;
+    color: $color_white;
 
     @media (min-width: 1024px) {
-        height: calc(100vh - 80px);
-        min-height: 640px;
+      width: 50%;
     }
+  }
+
+  &__title {
+    margin-top: 43px;
+    color: $color_white;
+    @media (min-width: 1024px) {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 34px;
+    }
+  }
+
+  &__description {
+    margin-top: 28px;
+    color: $color_white;
+    height: 100px;
 
     @media (min-width: 1400px) {
-        padding: 100px 0 0;
-        min-height: 740px;
+      height: 120px;
+    }
+  }
+
+  &__description-text {
+    color: $color_white;
+    padding-right: 32px;
+
+    @media (min-width: 1400px) {
+      margin-bottom: 20px;
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+
+  &__button {
+    margin-top: 28px;
+    color: $color_white;
+
+    @media (min-width: 1024px) {
+      font-size: 18px;
+      min-width: 230px;
+      height: 49px;
+      padding: 10px 20px;
+    }
+  }
+
+  &__carousel {
+    @media (min-width: 1280px) {
+      padding-left: 120px;
+    }
+  }
+
+  &__item {
+    padding: 15px;
+    margin: 0 auto;
+    display: flex !important;
+    justify-content: center;
+
+    @media (min-width: 1280px) {
+      padding: 30px 10px 30px 30px;
+      margin: 0;
+      justify-content: flex-start;
     }
 
-    @media (min-width: 1680px) {
-        min-height: 1000px;
-        padding: 200px 0 0;
+    &-inner {
+      background: $color_white;
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+      border-radius: 30px;
+      padding: 16px 20px 18px;
+      display: flex !important;
+      align-items: center;
+      width: 320px;
+
+      @media (min-width: 1280px) {
+        width: 365px;
+        padding: 20px 30px;
+        border-radius: 30px;
+      }
     }
 
-    .mCSB_scrollTools {
-        .mCSB_draggerContainer {
-            height: 100%;
-            width: 9px;
-            box-shadow: none;
-            border-radius: 5px;
-            background-color: inherit;
-        }
+    &-image {
+      min-width: 60px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      position: relative;
+      margin-right: 23px;
 
-        .mCSB_draggerRail {
-            width: 5px;
-            height: 100%;
-            background-color: inherit !important;
-        }
-
-        .mCSB_dragger .mCSB_dragger_bar {
-            background-color: inherit !important;
-        }
-
-
-        .mCSB_dragger {
-            right: 0;
-            min-height: 51px !important;
-            background-color: #FFFFFF !important;
-            opacity: 0.6;
-            box-shadow: -15px 4px 20px rgba(0, 0, 0, 0.12);
-            border-radius: 20px;
-            width: 8px;
-            height: 51px !important;
-        }
+      @media (min-width: 1280px) {
+        min-width: 90px;
+        width: 90px;
+        height: 90px;
+        margin-right: 10px;
+      }
     }
 
-    &__inner {
-        @include container;
-        display: flex;
+    &__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      border-radius: 50%;
+      object-fit: cover;
     }
 
-    &__content {
-        width: 81%;
-        color: $color_white;
-
-        @media (min-width: 1024px) {
-            width: 50%;
-        }
+    &-content {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
     }
 
-    &__title {
-        margin-top: 43px;
-        color: $color_white;
+    &-surname {
+      margin-bottom: 5px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
     }
 
-    &__description {
-        margin-top: 28px;
-        color: $color_white;
-        height: 100px;
-
-        @media (min-width: 1400px) {
-            height: 180px;
-        }
+    &-name {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      display: block;
     }
 
-    &__description-text {
-        color: $color_white;
-        padding-right: 32px;
-
-        @media (min-width: 1400px) {
-            margin-bottom: 20px;
-        }
+    &-subtitle {
+      font-size: 13px;
+      line-height: 15px;
+      font-weight: normal;
     }
 
-
-    &__button {
-        margin-top: 28px;
-        color: $color_white;
-
+    &-description {
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 15px;
+      margin-top: 5px;
     }
-
-    &__carousel {
-        @media (min-width: 1280px) {
-            padding-left: 120px;
-        }
-    }
-
-    &__item {
-        padding: 15px;
-        margin: 0 auto;
-        display: flex !important;
-        justify-content: center;
-
-        @media (min-width: 1280px) {
-            padding: 30px 10px 30px 30px;
-            margin: 0;
-            justify-content: flex-start;
-        }
-
-        &-inner {
-            background: $color_white;
-            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
-            border-radius: 30px;
-            padding: 16px 20px 18px;
-            display: flex !important;
-            align-items: center;
-            width: 320px;
-
-            @media (min-width: 1280px) {
-                width: 365px;
-                padding: 20px 30px;
-                border-radius: 30px;
-            }
-        }
-
-        &-image {
-            min-width: 60px;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
-            position: relative;
-            margin-right: 23px;
-
-
-            @media (min-width: 1280px) {
-                min-width: 90px;
-                width: 90px;
-                height: 90px;
-                margin-right: 10px;
-            }
-        }
-
-        &__image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            max-width: none;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        &-content {
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-        }
-
-        &-surname {
-            margin-bottom: 5px;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-        }
-
-        &-name {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 20px;
-            display: block;
-        }
-
-        &-subtitle {
-            font-size: 13px;
-            line-height: 15px;
-            font-weight: normal;
-        }
-
-        &-description {
-            font-weight: 300;
-            font-size: 13px;
-            line-height: 15px;
-            margin-top: 5px;
-        }
-    }
+  }
 }
