@@ -76,7 +76,7 @@
     }
 
     @media (min-width: 1920px) {
-        padding: 0 145px;
+        padding: 0 120px;
     }
 
     @media (min-width: 1680px) {
@@ -250,7 +250,7 @@
         }
 
         &__item {
-            margin-bottom: 35px;
+            margin-bottom: 25px;
 
             @media (min-width: 1024px) {
                 margin-left: 18px;
@@ -273,10 +273,14 @@
             }
 
             @media (min-width: 1024px) {
-                font-size: 14px;
+                font-size: 12px;
             }
 
             @media (min-width: 1280px) {
+                font-size: 14px;
+            }
+
+            @media (min-width: 1920px) {
                 font-size: 16px;
             }
         }

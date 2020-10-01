@@ -29,20 +29,46 @@ $(document).ready(function () {
                 var c = a(".modall__inner");
                 c.is(b.target) || 0 !== c.has(b.target).length || (c.removeClass("active-modall"),
                     a(".modall").removeClass("active-modall"),
-                    a(".body").removeClass("showing-modal"))
+                    a("body").removeClass("showing-modal"))
+            })
+        }),
+
+        jQuery(function (a) {
+            a(document).mouseup(function (b) {
+                var c = a(".modall__form");
+                c.is(b.target) || 0 !== c.has(b.target).length || (c.removeClass("active-modall"),
+                    a(".modall").removeClass("active-modall"),
+                    a("body").removeClass("showing-modal"))
             })
         }),
 
         $('.close').on('click', function () {
             $(".modall").removeClass('active-modall');
-            $('.body').removeClass('showing-modal');
+            $('body').removeClass('showing-modal');
             $("#playerPopoup").attr('src', '')
         });
 
     $('.application').on('click', function () {
         $(".modall").removeClass('active-modall');
-        $(".modall-application").addClass('active-modall');
-        $('.body').addClass('showing-modal');
+        $(".modall__application").addClass('active-modall');
+        $('body').addClass('showing-modal');
+    });
+
+    $('.log-in').on('click', function () {
+        $(".modall").removeClass('active-modall');
+        $(".modall__log-in").addClass('active-modall');
+        $('body').addClass('showing-modal');
+    });
+
+    $('.modall__registration-button').on('click', function () {
+        $(".modall").removeClass('active-modall');
+        $(".modall__registration").addClass('active-modall');
+        $('body').addClass('showing-modal');
+    });
+
+    $('.modall__gender-link').on('click', function () {
+        $('.modall__gender-link .modall__gender-svg').removeClass('active')
+        $(this).children().addClass('active')
     });
 
     $('.contact-us__social-link').on('click', function () {
@@ -54,6 +80,7 @@ $(document).ready(function () {
         $('.modall__social-link').children('.modall__social-icon').removeClass('active')
         $(this).children('.modall__social-icon').toggleClass('active')
     })
+
 
 
     jQuery(".only_number").keypress(function (e) {

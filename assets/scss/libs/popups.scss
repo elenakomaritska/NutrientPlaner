@@ -16,9 +16,8 @@
         background-color: $color_silver;
         box-shadow: -15px 4px 20px rgba(0, 0, 0, 0.12);
         border-radius: 10px;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 0%);
         left: 50%;
-        top: 50%;
         margin: 0 auto;
         position: absolute;
         display: flex;
@@ -26,6 +25,7 @@
         justify-content: center;
         align-items: center;
         padding: 30px;
+        min-height: 100%;
     }
 
     .close {
@@ -171,13 +171,262 @@
             display: inline-flex;
         }
     }
-}
 
-.modall-application {
-    .modall__inner {
-        max-width: 300px;
+    &__gender {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+
+        &-link {
+            width: 22px;
+            height: 22px;
+            margin-right: 11px;
+
+            @media (min-width: 1280px) {
+                width: 32px;
+                height: 32px;
+                margin-right: 20px;
+            }
+        }
+
+        &-svg {
+            width: 100%;
+            height: 100%;
+
+            path {
+                fill: $color_DimGray;
+            }
+
+            &.active {
+                path {
+                    fill: $color_green;
+                }
+            }
+        }
     }
 }
+
+.modall__application {
+    .modall__inner {
+        max-width: 300px;
+        transform: translate(-50%, -50%);
+        top: 50%;
+    }
+}
+
+.modall__log-in {
+    .modall {
+        &__inner {
+            max-width: 300px;
+            background-color: initial;
+            box-shadow: none;
+            padding: 0;
+            height: 100%;
+
+            @media (min-width: 1280px) {
+                height: 100%;
+            }
+        }
+
+        &__title {
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 31px;
+            color: $color_green;
+            margin-bottom: 30px;
+            margin-top: 20px;
+            display: block;
+        }
+
+        &__form {
+            padding: 26px 28px;
+            background-color: $color_silver;
+            box-shadow: -15px 4px 20px rgba(0, 0, 0, 0.12);
+            border-radius: 10px;
+        }
+
+        &__label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 15px;
+        }
+
+        &__input {
+            margin-bottom: 8px;
+            border-radius: 14px;
+
+            &::placeholder {
+                color: $color_DimGray;
+            }
+        }
+
+        &__action {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__link {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: $color_green;
+            display: block;
+            margin-top: 15px;
+        }
+
+        &__button {
+            min-width: 136px;
+            height: 39px;
+        }
+
+        &__registration {
+            display: flex;
+            flex-direction: column;
+            margin-top: 35px;
+            text-align: left;
+            width: 100%;
+            align-items: baseline;
+
+            @media (min-width: 1280px) {
+                position: absolute;
+                top: 70px;
+                left: 130%;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+
+            &-desc {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 14px;
+                display: block;
+                color: $color_green;
+            }
+
+            &-button {
+                background: $color_silver;
+                box-shadow: -6px 3px 12px rgba(0, 0, 0, 0.12);
+                border-radius: 25px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                min-width: 137px;
+                height: 39px;
+                color: $color_grey;
+                border-color: $color_silver;
+
+                &:hover {
+                    border-color: $color_green;
+                    background-color: $color_green;
+                }
+            }
+        }
+
+    }
+}
+
+.modall__registration {
+    .modall {
+        &__inner {
+            max-width: 300px;
+            background-color: initial;
+            box-shadow: none;
+            padding: 0;
+
+            @media (min-width: 1280px) {
+                height: 100%;
+                max-width: 600px;
+            }
+        }
+
+        &__title {
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 31px;
+            color: $color_green;
+            margin-bottom: 30px;
+            margin-top: 20px;
+            display: block;
+
+            @media (min-width: 1280px) {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+
+        &__form {
+            padding: 26px 28px;
+            background-color: $color_silver;
+            box-shadow: -15px 4px 20px rgba(0, 0, 0, 0.12);
+            border-radius: 10px;
+
+            @media (min-width: 1280px) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 50px 40px 40px;
+            }
+        }
+
+        &__form-column {
+            @media (min-width: 1280px) {
+                width: 42%;
+                margin: 0 auto;
+            }
+        }
+
+        &__label,
+        &__gender-description {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 15px;
+            width: 100%;
+        }
+
+        &__input {
+            margin-bottom: 8px;
+            border-radius: 14px;
+
+            &::placeholder {
+                color: $color_DimGray;
+            }
+        }
+
+        &__action {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media (min-width: 1280px) {
+                width: 100%;
+            }
+        }
+
+        &__link {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: $color_green;
+            display: block;
+            margin-top: 15px;
+        }
+
+        &__button {
+            min-width: 136px;
+            height: 39px;
+        }
+
+    }
+}
+
+
 
 .modall.active-modall {
     display: block;

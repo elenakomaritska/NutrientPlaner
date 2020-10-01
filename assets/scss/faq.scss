@@ -92,16 +92,38 @@
 
         @media (min-width: 1024px) {
             padding-left: 30px;
-
-            .slick-track {
-                display: flex;
-                align-items: center;
-            }
         }
 
         @media (min-width: 1920px) {
             padding-left: 120px;
             padding-right: 230px;
+        }
+    }
+
+    &__show-items {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+
+        @media (min-width: 1024px) {
+            padding-left: 30px;
+        }
+
+        @media (min-width: 1920px) {
+            padding-right: 220px;
+            padding-left: 120px;
+
+            .faq__action {
+                position: absolute;
+                top: 50%;
+                left: 93%;
+                width: 196px;
+                max-width: none;
+                margin: 0 auto;
+                transform: translate(-50%, -50%);
+            }
         }
     }
 
@@ -173,6 +195,19 @@
 
     }
 
+    &__show-item {
+        margin: 0;
+
+        @media (min-width: 480px) {
+            margin: 0 auto;
+        }
+
+        @media (min-width: 1024px) {
+            width: 32%;
+            margin: 0;
+        }
+    }
+
     &__questions-inner {
         position: relative;
     }
@@ -217,6 +252,46 @@
             @media (min-width: 1920px) {
                 top: 11px;
             }
+        }
+    }
+
+    &__button-hide {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        background: $color_silver;
+        box-shadow: -6px 3px 12px rgba(0, 0, 0, 0.12);
+        border-radius: 40px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &__button-arrow {
+        display: block;
+        width: 42px;
+        height: 42px;
+        position: absolute;
+        bottom: 92%;
+        border-radius: 50%;
+        padding: 10px;
+        background: $color_silver;
+        box-shadow: -6px 3px 12px rgba(0, 0, 0, 0.12);
+
+        @media (min-width: 1920px) {
+            margin-right: 10px;
+            position: relative;
+            bottom: auto;
+            display: block;
+            width: 15px;
+            height: 15px;
+            padding: 0;
+            border-radius: 0;
+            box-shadow: none;
         }
     }
 }
