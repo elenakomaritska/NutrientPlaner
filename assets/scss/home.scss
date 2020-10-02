@@ -1,6 +1,7 @@
 @import "libs/variables";
 @import "libs/container-mixins";
 @import "slick.min.css";
+@import "animate.css";
 
 .header__action {
     @media (min-width: 1024px) {
@@ -372,7 +373,7 @@
         position: absolute;
         content: "";
         pointer-events: none;
-        // mix-blend-mode: multiply;
+        mix-blend-mode: multiply;
         z-index: 2;
         top: 0;
         left: 0;
@@ -938,9 +939,9 @@
         background-position: bottom right;
 
         @media (min-width: 1280px) {
-            bottom: -16%;
             height: 1095px;
-            width: 65%;
+            bottom: -8%;
+            width: 22%;
             background-size: contain;
         }
     }
@@ -1560,6 +1561,10 @@
 
         @media (min-width: 1024px) {
             display: block;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: $color_greyDark;
         }
     }
 

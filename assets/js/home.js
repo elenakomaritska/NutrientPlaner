@@ -31,6 +31,7 @@ $(window).scroll(function () {
 });
 
 $(document).ready(function () {
+  new WOW().init();
 
   // кнопка ютуб
   $('#play').on('click', function (e) {
@@ -70,7 +71,7 @@ $(document).ready(function () {
     cssEase: 'linear',
     adaptiveHeight: false,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
     centerMode: true,
     draggable: false,
     swipe: false,
@@ -103,7 +104,7 @@ $(document).ready(function () {
     cssEase: 'linear',
     adaptiveHeight: true,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
     asNavFor: '.step__list',
     prevArrow: '<button class="slick-prev"></button>',
     nextArrow: '<button class="slick-next"></button>',

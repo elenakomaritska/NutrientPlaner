@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
   <link rel="stylesheet" href="css/home.min.css" data-inprogress="">
+
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -41,7 +42,7 @@
       <!-- Секция Главный баннер -->
       <section class="main-banner" id="main-banner">
         <div class="main-banner__inner">
-          <div class="main-banner__content">
+          <div class="main-banner__content fadeInUp wow">
             <a href="#" class="main-banner__logo">
               <img src="img/logo.png" alt="logo">
             </a>
@@ -64,7 +65,7 @@
         <div class="advantages__inner">
           <h2 class="advantages__title title">Наши преимущества</h2>
           <ul class="advantages__list">
-            <li class="advantages__item">
+            <li class="advantages__item fadeInUp wow">
               <div class="advantages__img-wrapper">
                 <img src="img/icon-1.svg" class="advantages__img" alt="">
               </div>
@@ -73,7 +74,7 @@
                 До 80% рабочего времени
               </p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item fadeInUp wow">
               <div class="advantages__img-wrapper">
                 <img src="img/icon-2.svg" class="advantages__img" alt="">
               </div>
@@ -82,7 +83,7 @@
                 Создан группой специалистов и врачей
               </p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item fadeInUp wow">
               <div class="advantages__img-wrapper">
                 <img src="img/icon-3.svg" class="advantages__img" alt="">
               </div>
@@ -91,7 +92,7 @@
                 Учитывается при создании рациона
               </p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item fadeInUp wow">
               <div class="advantages__img-wrapper">
                 <img src="img/icon-4.svg" class="advantages__img" alt="">
               </div>
@@ -105,7 +106,7 @@
       </section>
 
       <!-- Секция Возможности -->
-      <section class="opportunities" id="opportunities">
+      <section class="opportunities fadeInUp wow" data-wow-duration='4s' id="opportunities">
         <div class="opportunities__inner">
           <h2 class="opportunities__title ">Функции и возможности</h2>
 
@@ -206,7 +207,7 @@
 
 
       <!-- Секция Видео -->
-      <section class="video" id="video">
+      <section class="video fadeInUp wow" data-wow-duration='3s' id="video">
         <img class='video__background' id="video-cover" src="img/video.jpg" alt="">
         <iframe class='video__iframe' id="player" src="https://www.youtube.com/embed/W9n8aoB_WC4" frameborder="0"
           allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -215,7 +216,7 @@
       </section>
 
       <!-- Секция Шаги -->
-      <section class="step" id="step">
+      <section class="step fadeInUp wow" data-wow-duration='3s' id="step">
         <div class="step__inner">
           <div class="step__heading">
             <h2 class="step__heading-title">Как работает Nutrient Planner</h2>
@@ -265,7 +266,7 @@
       </section>
 
       <!-- Секция Тарифы -->
-      <section class="rates" id="rates">
+      <section class="rates fadeInUp wow" data-wow-duration='3s' id="rates">
         <div class="rates__inner">
           <h2 class="rates__title">Тарифы</h2>
           <span class="rates__subtitle">Выберите период оплаты и вариант</span>
@@ -284,7 +285,7 @@
               <div class="rates__cards-overflow"></div>
               <div class="rates__cards-heading">
                 <h3 class="rates__cards-title">Разовый</h3>
-                <span class="rates__cards-price"><span class="rates__price-value">1490</span> Р</span>
+                <span class="rates__cards-price"><span class="rates__price-value">1490</span> руб.</span>
               </div>
               <div class="rates__cards-content">
                 <p class="rates__cards-text">
@@ -299,10 +300,10 @@
               <div class="rates__cards-heading">
                 <h3 class="rates__cards-title">Базовый</h3>
                 <span class="rates__cards-price">
-                  <span class="rates__price-value" id="cardBase">2990 </span> Р<span
+                  <span class="rates__price-value" id="cardBase">2990 </span> руб.<span
                     class="rates__cards-month">/мес</span>
                 </span>
-                <span class="rates__cards-saving">Экономия <span class='count' id="countBase">0</span> Р</span>
+                <span class="rates__cards-saving">Экономия <span class='count' id="countBase">0</span> руб.</span>
               </div>
               <div class="rates__cards-content">
                 <div class="rates__cards-select">
@@ -322,7 +323,6 @@
               </div>
               <div class="rates__cards-action">
                 <button class="rates__cards-button button button--blue application">Заказать</button>
-                <a href="#" class="rates__cards-promo">Есть промокод?</a>
               </div>
             </div>
             <div class="rates__cards-item" id="professional">
@@ -330,11 +330,11 @@
               <div class="rates__cards-heading">
                 <h3 class="rates__cards-title">Профессиональный</h3>
                 <span class="rates__cards-price">
-                  <span class="rates__price-value" id="cardProfessional">3490</span> Р<span
+                  <span class="rates__price-value" id="cardProfessional">3490</span> руб.<span
                     class="rates__cards-month">/мес</span>
                 </span>
                 <span class="rates__cards-saving">Экономия <span class='count' id="countProfessional">0</span>
-                  Р</span>
+                  руб.</span>
               </div>
               <div class="rates__cards-content">
                 <div class="rates__cards-select">
@@ -574,7 +574,7 @@
       </section>
 
       <!-- Секция Демо -->
-      <section class="demo" id="demo">
+      <section class="demo fadeInUp wow" data-wow-duration='3s' id="demo">
         <div class="demo__inner">
           <h2 class="demo__title">Не знаете, какой тариф выбрать?</h2>
           <p class="demo__description">Попробуйте 3-дневную демо-версию
@@ -584,7 +584,7 @@
       </section>
 
       <!-- Секция Отзывы -->
-      <section class="reviews" id="reviews">
+      <section class="reviews fadeInUp wow" id="reviews">
         <div class="reviews__inner">
           <div class="reviews__heading">
             <h2 class="reviews__heading-title">Отзывы</h2>
@@ -648,7 +648,7 @@
       </section>
 
       <!-- Секция Partners -->
-      <section class="partners" id="partners">
+      <section class="partners fadeInUp wow" data-wow-duration='3s' id="partners">
         <div class="partners__inner">
           <div class="partners__heading">
             <h2 class="partners__heading-title">Партнеры</h2>
@@ -687,7 +687,7 @@
       </section>
 
       <!-- Секция FAQ -->
-      <section class="faq" id="faq">
+      <section class="faq fadeInUp wow" data-wow-duration='3s' id="faq">
         <div class="faq__inner">
           <div class="faq__heading">
             <h2 class="faq__heading-title">FAQ</h2>
@@ -742,7 +742,7 @@
       </section>
 
       <!-- Секция contact-us -->
-      <section class="contact-us" id="contact-us">
+      <section class="contact-us fadeInUp wow" data-wow-duration='3s' id="contact-us">
         <h2 class="contact-us__title">Напишите нам!</h2>
         <div class="contact-us__inner">
           <form class="contact-us__form form">
@@ -863,6 +863,7 @@
 
   <!-- Скрипты -->
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.matchHeight.min.js"></script>
   <script src="js/jcf.min.js"></script>
@@ -870,6 +871,7 @@
   <script src="js/jcf.radio.min.js"></script>
   <script src="js/main.min.js"></script>
   <script src="js/home.min.js"></script>
+
 
 </body>
 
