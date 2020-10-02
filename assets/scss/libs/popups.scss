@@ -178,13 +178,23 @@
         margin-bottom: 15px;
 
         &-link {
-            width: 22px;
-            height: 22px;
+            // width: 22px;
+            // height: 22px;
             margin-right: 11px;
+            color: $color_DimGray;
+            font-weight: 600;
+
+            &.active {
+                color: $color_green;
+            }
+
+            &:hover {
+                color: $color_green;
+            }
 
             @media (min-width: 1280px) {
-                width: 32px;
-                height: 32px;
+                // width: 32px;
+                // height: 32px;
                 margin-right: 20px;
             }
         }

@@ -67,8 +67,8 @@ $(document).ready(function () {
     });
 
     $('.modall__gender-link').on('click', function () {
-        $('.modall__gender-link .modall__gender-svg').removeClass('active')
-        $(this).children().addClass('active')
+        $('.modall__gender-link').removeClass('active')
+        $(this).addClass('active')
     });
 
     $('.contact-us__social-link').on('click', function () {
