@@ -1,15 +1,63 @@
 $(document).ready(function () {
 
     //reviews__faq
-    $(".faq__carousel").slick({
+    $("#carousel").slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        arrows: false,
+        // arrows: false,
         fade: false,
         focusOnSelect: true,
         variableWidth: true,
         autoplaySpeed: 5000,
+        appendArrows: $('#faq__holder .faq__holder-buttons'),
+        prevArrow: '<button type="button" id="prev-01" class="faq__prev"></button>',
+        nextArrow: '<button type="button" id="next-01"class="faq__next"></button>',
+        // autoplay: true,
+        cssEase: 'linear',
+        dots: false,
+        responsive: [{
+            breakpoint: 1680,
+            settings: {
+                slidesToShow: 2,
+            },
+        }]
+    })
+
+    $("#carousel-two").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        fade: false,
+        focusOnSelect: true,
+        variableWidth: true,
+        autoplaySpeed: 5000,
+        appendArrows: $('#faq__holder-two .faq__holder-buttons'),
+        prevArrow: '<button type="button" id="prev-02" class="faq__prev"></button>',
+        nextArrow: '<button type="button" id="next-02"class="faq__next"></button>',
+        // autoplay: true,
+        cssEase: 'linear',
+        dots: false,
+        responsive: [{
+            breakpoint: 1680,
+            settings: {
+                slidesToShow: 2,
+            },
+        }]
+    })
+
+    $("#carousel-three").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // arrows: false,
+        fade: false,
+        focusOnSelect: true,
+        variableWidth: true,
+        autoplaySpeed: 5000,
+        appendArrows: $('#faq__holder-three .faq__holder-buttons'),
+        prevArrow: '<button type="button" id="prev-02" class="faq__prev"></button>',
+        nextArrow: '<button type="button" id="next-02"class="faq__next"></button>',
         // autoplay: true,
         cssEase: 'linear',
         dots: false,

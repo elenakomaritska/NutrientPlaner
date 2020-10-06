@@ -30,6 +30,7 @@ $(window).scroll(function () {
   }
 });
 
+
 $(document).ready(function () {
   new WOW().init();
 
@@ -70,7 +71,6 @@ $(document).ready(function () {
     arrows: false,
     cssEase: 'linear',
     adaptiveHeight: false,
-    autoplay: true,
     autoplaySpeed: 5000,
     centerMode: true,
     draggable: false,
@@ -87,7 +87,8 @@ $(document).ready(function () {
         slidesToScroll: 1,
         centerMode: false,
       },
-    }, ]
+    }, ],
+
   })
 
   $('.step__item').matchHeight({
@@ -100,10 +101,8 @@ $(document).ready(function () {
     arrows: false,
     useTransform: false,
     rows: 0,
-    // fade: true,
     cssEase: 'linear',
     adaptiveHeight: true,
-    autoplay: true,
     autoplaySpeed: 5000,
     asNavFor: '.step__list',
     prevArrow: '<button class="slick-prev"></button>',
@@ -123,8 +122,20 @@ $(document).ready(function () {
     ]
   })
 
+
   var $gl = $(".step__list")
   var $gl2 = $(".step__carousel")
+  var sectionStep = $('.step')
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >= $(sectionStep).position().top) {
+
+      $($gl).slick('slickSetOption', 'autoplay', 'true');
+      $($gl2).slick('slickSetOption', 'autoplay', 'true');
+      $($gl2).slick('refresh');
+
+    }
+  })
 
   $(".step__list .step__item , .step__heading-dots li button").on("click", function () {
     var index = $(this).attr("data-slick-index")
@@ -401,7 +412,6 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    arrows: false,
     fade: false,
     focusOnSelect: true,
     variableWidth: true,
@@ -409,6 +419,7 @@ $(document).ready(function () {
     // autoplay: true,
     cssEase: 'linear',
     dots: true,
+    arrows: false,
     appendDots: ".faq__heading-dots",
   })
 

@@ -153,6 +153,11 @@
             margin-bottom: 10px;
             max-width: 1005px;
             color: $color_grey;
+
+            @media (min-width: 1280px) {
+                font-size: 18px;
+                line-height: 22px;
+            }
         }
 
         &-images {
@@ -197,6 +202,11 @@
             @media (min-width: 768px) {
                 order: 3;
             }
+
+            @media (min-width: 1280px) {
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
 
         &-desc {
@@ -205,6 +215,11 @@
             font-size: 13px;
             line-height: 15px;
             color: $color_grey;
+
+            @media (min-width: 1280px) {
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
     }
 
