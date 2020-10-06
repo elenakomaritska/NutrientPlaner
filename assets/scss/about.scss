@@ -60,6 +60,7 @@
     height: 209px;
     left: 0;
     top: 0;
+
     @media (min-width: 1024px) {
       display: none;
     }
@@ -162,6 +163,10 @@
     }
   }
 
+  &__holder-carousel {
+    position: relative;
+  }
+
   &__button {
     margin-top: 28px;
     color: $color_white;
@@ -188,26 +193,25 @@
     right: 10%;
     bottom: 47px;
     position: absolute;
-    background: #fcfcfc;
+    background: $color_silver;
     box-shadow: -15px 10px 30px rgba(0, 0, 0, 0.22);
     border-radius: 50%;
     z-index: 99;
     right: 2%;
     bottom: 20px;
+    top: 50%;
+    transform: translate(0px, -50%);
 
     @media (min-width: 1024px) {
       right: 10%;
-      bottom: 47px;
     }
 
     @media (min-width: 1440px) {
       right: 2%;
-      bottom: 100px;
     }
 
     @media (min-width: 1680px) {
       right: 3%;
-      bottom: 131px;
     }
 
     &::before {
