@@ -128,7 +128,7 @@ $(document).ready(function () {
   var sectionStep = $('.step')
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() >= $(sectionStep).position().top) {
+    if ($(this).scrollTop() >= $(sectionStep).offset().top - 130) {
 
       $($gl).slick('slickSetOption', 'autoplay', 'true');
       $($gl2).slick('slickSetOption', 'autoplay', 'true');
