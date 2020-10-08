@@ -5,6 +5,18 @@
 })(jQuery);
 
 $(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= 200) {
+            $('header').css('background-color', '#fff').removeClass('out').removeClass('topAbsolute')
+                .css('position', 'fixed').addClass('active')
+        } else if ($(window).scrollTop() >= 400) {
+            $('header').addClass('out')
+        } else {
+            $('header').css('background-color', 'inherit').css('position', 'absolute').addClass('topAbsolute')
+
+        }
+    });
+
     //about-banner carousel
     $(".about-banner__carousel").slick({
         infinite: true,

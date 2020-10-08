@@ -9,6 +9,10 @@
   @media (min-width: 1024px) {
     height: 60px;
 
+    &.topAbsolute {
+      height: 60px;
+    }
+
     &__inner {
       height: 60px;
     }
