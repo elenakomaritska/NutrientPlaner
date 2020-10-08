@@ -130,9 +130,9 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() >= $(sectionStep).offset().top - 130) {
 
-      $($gl).slick('slickSetOption', 'autoplay', 'true');
-      $($gl2).slick('slickSetOption', 'autoplay', 'true');
-      $($gl2).slick('refresh');
+      // $($gl).slick('slickSetOption', 'autoplay', 'true');
+      // $($gl2).slick('slickSetOption', 'autoplay', 'true');
+      // $($gl2).slick('refresh');
 
     }
   })

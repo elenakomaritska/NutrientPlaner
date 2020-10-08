@@ -458,17 +458,31 @@
           </div>
       </div></section>
 
+      <!-- Секция Тарифы заглушка -->
+      <section class="rates-beta-test fadeInUp wow" id="rates" style="background-image: url(img/rates-bg.jpg);">
+        <div class="rates-beta-test__inner">
+          <h2 class="rates-beta-test__title">В данный момент проводится закрытое <span class="rates-beta-test__title-strong">бета-тестирование</span> Nutrient
+            Planner. Мы готовимся к долгожданному открытию</h2>
+          <p class="rates-beta-test__text">
+            Хотите принять участие в закрытом тестировании? Если вы врач-диетолог, нутрициолог или тренер и имеете
+            большой опыт в создании рационов клиентам — приглашаем вас принять участие в тестировании. Отправьте заявку,
+            и мы вам напишем
+          </p>
+          <button class="rates-beta-test__button button button--light application">Отправить заявку</button>
+      </div></section>
+
       <!-- Секция Тарифы -->
-      <section class="rates fadeInUp wow" id="rates">
+      <!-- <section class="rates fadeInUp wow" id="rates">
         <div class="rates__inner">
           <h2 class="rates__title">Тарифы</h2>
           <span class="rates__subtitle">Выберите период оплаты и вариант</span>
           <div class="rates__select select">
-            <select class="rates__show-sale" data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: false}">
-              <option data-value="0" value="Без скидки">1 месяц</option>
-              <option data-value="5" value="Скидка 5%">3 месяцев</option>
-              <option data-value="10" value="Скидка 10%">6 месяцев</option>
-              <option data-value="15" value="Скидка 15%">12 месяцев</option>
+            <select class="rates__show-sale"
+              data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+              <option data-value='0' value="Без скидки">1 месяц</option>
+              <option data-value='5' value="Скидка 5%">3 месяцев</option>
+              <option data-value='10' value="Скидка 10%">6 месяцев</option>
+              <option data-value='15' value="Скидка 15%">12 месяцев</option>
             </select>
             <span class="rates__select-sale">Без скидки</span>
           </div>
@@ -492,15 +506,17 @@
               <div class="rates__cards-heading">
                 <h3 class="rates__cards-title">Базовый</h3>
                 <span class="rates__cards-price">
-                  <span class="rates__price-value" id="cardBase">2990 </span> руб.<span class="rates__cards-month">/мес</span>
+                  <span class="rates__price-value" id="cardBase">2990 </span> руб.<span
+                    class="rates__cards-month">/мес</span>
                 </span>
-                <span class="rates__cards-saving">Экономия <span class="count" id="countBase">0</span> руб.</span>
+                <span class="rates__cards-saving">Экономия <span class='count' id="countBase">0</span> руб.</span>
               </div>
               <div class="rates__cards-content">
                 <div class="rates__cards-select">
                   <label class="rates__cards-label">Количество созданных
                     рационов в месяц</label>
-                  <select class="rates__show-price" id="selectBase" data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: false}">
+                  <select class="rates__show-price" id="selectBase"
+                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
                     <option value="2990">До 10 рационов в месяц</option>
                     <option value="3990">До 15 рационов в месяц</option>
                     <option value="4990">До 20 рационов в месяц</option>
@@ -520,16 +536,18 @@
               <div class="rates__cards-heading">
                 <h3 class="rates__cards-title">Профессиональный</h3>
                 <span class="rates__cards-price">
-                  <span class="rates__price-value" id="cardProfessional">3490</span> руб.<span class="rates__cards-month">/мес</span>
+                  <span class="rates__price-value" id="cardProfessional">3490</span> руб.<span
+                    class="rates__cards-month">/мес</span>
                 </span>
-                <span class="rates__cards-saving">Экономия <span class="count" id="countProfessional">0</span>
+                <span class="rates__cards-saving">Экономия <span class='count' id="countProfessional">0</span>
                   руб.</span>
               </div>
               <div class="rates__cards-content">
                 <div class="rates__cards-select">
                   <label class="rates__cards-label">Количество созданных
                     рационов в месяц</label>
-                  <select class="rates__show-price" id="selectProfessional" data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: false}">
+                  <select class="rates__show-price" id="selectProfessional"
+                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
                     <option value="3480">До 10 рационов в месяц</option>
                     <option value="4480">10 рационов в месяц</option>
                     <option value="5480">10 рационов в месяц</option>
@@ -542,7 +560,7 @@
                 </p>
               </div>
               <div class="rates__cards-action">
-                <button disabled="" class="rates__cards-button button button--disable">В разработке</button>
+                <button disabled class="rates__cards-button button button--disable">В разработке</button>
               </div>
             </div>
           </div>
@@ -759,7 +777,7 @@
               сравнение</a>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Секция Демо -->
       <section class="demo fadeInUp wow" id="demo">
