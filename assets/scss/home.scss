@@ -407,8 +407,7 @@
     }
 
     @media (min-width: 1600px) {
-        padding-top: 180px;
-        padding-bottom: 140px;
+        padding-bottom: 60px;
     }
 
     &__inner {
@@ -448,10 +447,6 @@
         @media (min-width: 1280px) {
             width: 45%;
         }
-
-        @media (min-width: 1600px) {
-            width: 40%;
-        }
     }
 
     &__wrapper-image {
@@ -461,8 +456,8 @@
             width: 50%;
         }
 
-        @media (min-width: 1600px) {
-            width: 55%;
+        @media (min-width: 1680px) {
+            width: 40%;
         }
 
     }
@@ -495,7 +490,7 @@
 
         @media (min-width: 768px) {
             width: 51%;
-            padding-bottom: 60px;
+            margin-bottom: 88px;
         }
 
         @media (min-width: 1024px) {
@@ -504,10 +499,6 @@
 
         @media (min-width: 1280px) {
             width: 45%;
-        }
-
-        @media (min-width: 1600px) {
-            width: 40%;
         }
 
         &-subtitle {
@@ -539,6 +530,7 @@
             @media (min-width: 768px) {
                 display: block;
                 max-width: 80%;
+                margin-bottom: 0;
             }
 
             @media (min-width: 1024px) {
@@ -547,6 +539,11 @@
 
             @media (min-width: 1280px) {
                 max-width: 500px;
+                padding-bottom: 112px;
+            }
+
+            @media (min-width: 1680px) {
+                padding-bottom: 150px;
             }
         }
     }
@@ -573,13 +570,6 @@
             width: 45%;
             margin-top: -145px;
         }
-
-        @media (min-width: 1600px) {
-            margin-top: -250px;
-            width: 40%;
-        }
-
-
     }
 
     &__dots {
@@ -603,9 +593,6 @@
             width: 45%;
         }
 
-        @media (min-width: 1600px) {
-            width: 40%;
-        }
 
         .slick-dots {
             display: flex;

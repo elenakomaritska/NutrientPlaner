@@ -51,5 +51,5 @@ $(document).ready(function () {
         ],
     })
 
-    $(".about-banner__description").mCustomScrollbar();
+    // $(".about-banner__description").mCustomScrollbar();
 })
