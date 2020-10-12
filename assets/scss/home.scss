@@ -511,7 +511,6 @@
         }
     }
 
-
     &__content {
         display: flex !important;
         flex-wrap: wrap;
@@ -637,6 +636,7 @@
                 -moz-border-radius: 50%;
                 -ms-border-radius: 50%;
                 -o-border-radius: 50%;
+                cursor: pointer;
 
                 @media (min-width: 1024px) {
                     width: 18px;
@@ -2081,16 +2081,12 @@
     padding-top: 22px;
 
     @media (min-width: 1024px) {
-        padding-bottom: 80px;
-        padding-top: 65px;
+        padding-bottom: 50px;
+        padding-top: 50px;
     }
 
     &__heading {
         padding-bottom: 23px;
-
-        @media (min-width: 1024px) {
-            padding-bottom: 32px;
-        }
 
         &-title {
             display: block;
@@ -2131,7 +2127,7 @@
             width: 205px;
             padding: 10px;
             cursor: pointer;
-            height: 140px;
+            height: 110px;
         }
     }
 
