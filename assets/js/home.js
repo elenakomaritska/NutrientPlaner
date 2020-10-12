@@ -385,27 +385,27 @@ $(document).ready(function () {
   })
 
   //partners__carousel
-  var settings = {
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    arrows: false,
-    variableWidth: true,
-    autoplaySpeed: 5000,
-    // autoplay: true,
-    dots: false,
-    responsive: [{
-      breakpoint: 1024,
-      settings: 'unslick',
-    }],
-  }
+  // var settings = {
+  //   slidesToShow: 2,
+  //   slidesToScroll: 2,
+  //   arrows: false,
+  //   variableWidth: true,
+  //   autoplaySpeed: 5000,
+  //   // autoplay: true,
+  //   dots: false,
+  //   responsive: [{
+  //     breakpoint: 1024,
+  //     settings: 'unslick',
+  //   }],
+  // }
 
-  var sl = $('.partners__carousel').slick(settings)
+  // var sl = $('.partners__carousel').slick(settings)
 
-  $(window).on('resize', function () {
-    if ($(window).width() > 420 && !sl.hasClass('slick-initialized')) {
-      $('.partners__carousel').slick(settings)
-    }
-  })
+  // $(window).on('resize', function () {
+  //   if ($(window).width() > 420 && !sl.hasClass('slick-initialized')) {
+  //     $('.partners__carousel').slick(settings)
+  //   }
+  // })
 
   //reviews__faq
   $(".faq__carousel").slick({

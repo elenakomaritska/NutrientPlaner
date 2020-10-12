@@ -2086,21 +2086,15 @@
     }
 
     &__heading {
-        display: flex;
-        width: 90%;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        align-items: center;
         padding-bottom: 23px;
 
         @media (min-width: 1024px) {
             padding-bottom: 32px;
-            text-align: center;
-            justify-content: center;
         }
 
         &-title {
             display: block;
+            width: 100%;
             text-align: center;
             font-weight: 600;
             font-size: 26px;
@@ -2117,32 +2111,27 @@
 
     &__carousel {
         display: flex;
-        flex-wrap: wrap;
-        width: 50%;
+        align-items: center;
         margin: 0 auto;
+        justify-content: center;
 
         @media (min-width: 1024px) {
             padding-top: 10px;
-            width: auto;
-            margin: 0;
         }
     }
 
     &__item {
         display: flex !important;
-        min-height: 50px;
-        margin: 5px auto 0;
-        padding: 0;
+        margin: 0 20px;
         justify-content: center;
         align-items: center;
-        width: 26%;
+        width: 30%;
 
         @media (min-width: 1024px) {
-            width: auto;
-            height: 140px;
-            margin: 0 auto;
+            width: 205px;
             padding: 10px;
             cursor: pointer;
+            height: 140px;
         }
     }
 
