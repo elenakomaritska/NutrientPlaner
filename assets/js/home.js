@@ -128,13 +128,16 @@ $(document).ready(function () {
   var sectionStep = $('.step')
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() >= $(sectionStep).offset().top - 130) {
+    if ($(this).scrollTop() >= $(sectionStep).position().top) {
 
       $($gl).slick('slickSetOption', 'autoplay', 'true');
       $($gl2).slick('slickSetOption', 'autoplay', 'true');
-      $($gl2).slick('refresh');
-
     }
+
+  })
+
+  $('.step').hover(function () {
+    $(".step__carousel").slick('refresh');
   })
 
   $(".step__list .step__item , .step__heading-dots li button").on("click", function () {
